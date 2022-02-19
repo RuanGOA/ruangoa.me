@@ -1,0 +1,12 @@
+:root {
+  --background-color-dark: #30475E;
+	--background-color-light: #F0F0F0;
+
+	--highlight-color: #F05454;
+
+	--presentation-background-color-dark: rgba(24, 24, 24, 0.8);
+	--presentation-background-color-light: rgba(240, 240, 240, 0.8);
+
+	--black: #181818;
+	--grey: #323232;
+}
