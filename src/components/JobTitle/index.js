@@ -4,9 +4,11 @@ import {
   Title
 } from './styled';
 
-export default function JobTitle() {
+export default function JobTitle({ isPresentationPage }) {
+  const spacing = isPresentationPage ? '0.1' : '0.5';
+
   return (
-    <Title>
+    <Title spacing={spacing}>
       Software Engineer
     </Title>
   );

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Title = styled.p`
   color: #181818;
   
-  letter-spacing: .1em;
+  letter-spacing: ${props => props.spacing}vw;
 
   text-transform: uppercase;
 
