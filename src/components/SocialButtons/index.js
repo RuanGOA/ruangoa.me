@@ -7,36 +7,41 @@ import { ReactComponent as EmailIcon } from "./assets/email.svg";
 
 import * as style from './styled';
 
-export default function SocialButtons() {
+export default function SocialButtons({isPresentationPage}) {
   return (
-    <style.LinkButtons>
-      <style.Icon
-        href={"https://github.com/ruangoa/"}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <GithubIcon />
-      </style.Icon>
-      <style.Icon
-        href={"https://www.linkedin.com/in/ruangoa/"}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <LinkedinIcon />
-      </style.Icon>
-      <style.Icon
-        href={"https://www.instagram.com/ruangoa/"}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <InstagramIcon />
-      </style.Icon>
-      <style.Icon
-        href={"mailto:ruangoa0@gmail.com"}
-        rel="noreferrer"
-      >
-        <EmailIcon />
-      </style.Icon>
-    </style.LinkButtons>
-  )
+    (isPresentationPage) ?
+      (
+        <style.LinkButtons>
+          <style.Icon
+            href={"https://github.com/ruangoa/"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GithubIcon />
+          </style.Icon>
+          <style.Icon
+            href={"https://www.linkedin.com/in/ruangoa/"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedinIcon />
+          </style.Icon>
+          <style.Icon
+            href={"https://www.instagram.com/ruangoa/"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <InstagramIcon />
+          </style.Icon>
+          <style.Icon
+            href={"mailto:ruangoa0@gmail.com"}
+            rel="noreferrer"
+          >
+            <EmailIcon />
+          </style.Icon>
+        </style.LinkButtons>
+      ) : (
+        <></>
+      )
+  );
 }

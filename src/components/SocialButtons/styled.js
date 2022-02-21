@@ -4,15 +4,14 @@ export const LinkButtons = styled.div`
   width: 100%;
 	display: flex;
 	align-content: center;
-	justify-content: center;
-	gap: 1em;
+	justify-content: space-evenly;
 `;
 
 export const Icon = styled.a`
 	width: 2.5em;
 	cursor: pointer;
 
-	fill: #181818;
+	fill: var(--black);
 
 	&:hover {
 		fill: var(--highlight-color);
