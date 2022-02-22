@@ -30,7 +30,7 @@ export default function LateralMenu() {
         <ChangeTheme />
       </AsideUtils>
       <AsideFooter>
-        <SocialButtons isLateralMenu={true} />
+        <SocialButtons isPresentationPage={false} />
       </AsideFooter>
     </Aside>
   );

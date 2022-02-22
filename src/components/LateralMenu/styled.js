@@ -33,6 +33,7 @@ export const AsideMain = styled.div`
 `;
 
 export const AsideUtils = styled.div`
+  height: auto;
   grid-row: 2;
 
   display: flex;
@@ -40,9 +41,18 @@ export const AsideUtils = styled.div`
   align-items: center;
 
   & > button > svg {
-    width: 3.5em;
+    border-radius: 5px;
+    width: 2.5em;
+    stroke: var(--highlight-color);
+    padding: 0.25em;
+
+    transition: all 0.5s;
   }
-`
+
+  & > button > svg:hover {
+    background: var(--white);
+  }
+`;
 
 export const AsideFooter = styled.div`
   grid-row: 3;
