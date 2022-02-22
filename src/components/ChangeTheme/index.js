@@ -2,8 +2,8 @@ import React from 'react';
 
 import { useConfig } from '../../contexts/config.context';
 
-import { ReactComponent as LightButton } from '../../assets/lightButton.svg';
-import { ReactComponent as DarkButton } from '../../assets/darkButton.svg';
+import { ReactComponent as Sun } from '../../assets/sun.svg';
+import { ReactComponent as Moon } from '../../assets/moon.svg';
 
 import {
   ThemeButton
@@ -20,7 +20,7 @@ export default function ChangeTheme() {
 
   return (
     <ThemeButton onClick={handleTheme}> 
-      {(theme === 'light') ? <LightButton /> : <DarkButton />}
+      {(theme === 'light') ? <Moon /> : <Sun />}
     </ThemeButton>
   );
 }
