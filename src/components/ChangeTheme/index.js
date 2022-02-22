@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+import { useConfig } from '../../contexts/config.context';
 
 import { ReactComponent as LightButton } from '../../assets/lightButton.svg';
 import { ReactComponent as DarkButton } from '../../assets/darkButton.svg';
@@ -9,7 +11,7 @@ import {
 
 
 export default function ChangeTheme() {
-  const [theme, setTheme] = useState('light');
+  const { theme, setTheme } = useConfig();
 
   const handleTheme = () => {
     if (theme === 'light') setTheme('dark');
