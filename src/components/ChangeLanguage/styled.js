@@ -4,7 +4,6 @@ export const LanguageContainer = styled.div`
   height: fit-content;
   display: flex;
   justify-content: center;
-  gap: 1em;
 
   border: 1px solid var(--highlight-color);
   border-radius: 5px;
@@ -23,7 +22,7 @@ export const LanguageItem = styled.button`
   text-transform: uppercase;
   background: transparent;
 
-  padding: .1em;
+  padding: .15em .25em;
 
   &.active {
     background: #C4C4C4;
