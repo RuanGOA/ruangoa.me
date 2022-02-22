@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.p`
-  color: #181818;
+  color: var(--text-color-${props => props.theme});
   
   letter-spacing: ${props => props.spacing}vw;
 
@@ -9,4 +9,6 @@ export const Title = styled.p`
 
   font-size: 1.5em;
   font-weight: 500;
+
+  transition: all 0.5s;
 `;
