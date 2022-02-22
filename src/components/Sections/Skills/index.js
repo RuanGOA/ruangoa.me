@@ -2,28 +2,25 @@ import React from 'react';
 
 import Section from '../index';
 
-import { 
-  Text,
-  List,
-  ItemList
-} from '../styled';
+import {
+  TagContainer,
+  Tag
+} from './styled';
 
 export default function Skills() {
-  const data = {
-    'Linguagem de Programação': ['Python', 'JavaScript'],
-    'Tecnologias': ['HTML', 'CSS', 'Flask', 'React', 'Machine Learning', 'SQL', 'Git', 'Docker', 'OpenShift']
-  };
+  const data = [
+    'Python', 'JavaScript', 'HTML', 'CSS', 'SCRUM', 
+    'Flask', 'React', 'Machine Learning', 'SQL', 
+    'Git', 'Docker', 'OpenShift'
+  ];
 
   return (
-    <Section title="Habilidades">
-      <List>
-      {Object.entries(data).map(([key, items]) => (
-          <ItemList key={key}>
-            <Text className="bold">{key}</Text>
-            <Text>{items.join('; ')}</Text>
-          </ItemList>
-      ))}
-      </List>
+    <Section title="Experiência com">
+      <TagContainer>
+        {data.map((item) => (
+          <Tag key={item}>{item}</Tag> 
+        ))}
+      </TagContainer>
     </Section>
   );
 }
