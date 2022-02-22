@@ -4,6 +4,7 @@ export const Logo = styled.div`
   width: 100%;
 
   display: flex;
+  flex-direction: ${props => props.direction};
   gap: 1.25em;
   align-items: center;
   justify-content: center;
@@ -18,7 +19,7 @@ export const Logo = styled.div`
 export const Name = styled.h2`
   color: var(--highlight-color);
 
-  letter-spacing: .1em;
+  letter-spacing: ${props => props.spacing}vw;
   text-transform: uppercase;
 
   font-size: 1.75em;
