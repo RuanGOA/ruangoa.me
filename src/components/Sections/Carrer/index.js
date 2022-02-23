@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from '../index';
+import { SectionComponent } from '../index';
 
 import { 
   Text,
@@ -14,7 +14,7 @@ export default function Carrer() {
   };
 
   return (
-    <Section title="Carreira">
+    <SectionComponent title="Carreira">
       <List>
       {Object.entries(data).map(([key, items]) => (
           <ItemList key={key}>
@@ -25,6 +25,6 @@ export default function Carrer() {
           </ItemList>
       ))}
       </List>
-    </Section>
+    </SectionComponent>
   );
 }

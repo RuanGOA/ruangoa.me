@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from '../index';
+import { SectionComponent } from '../index';
 
 import { 
   Link,
@@ -16,7 +16,7 @@ export default function Courses() {
   };
 
   return (
-    <Section title="Cursos">
+    <SectionComponent title="Cursos">
       <List>
       {Object.entries(data).map(([key, url]) => (
         <ItemList key={key} className="dotted">
@@ -30,6 +30,6 @@ export default function Courses() {
         </ItemList>
       ))}
       </List>
-    </Section>
+    </SectionComponent>
   );
 }

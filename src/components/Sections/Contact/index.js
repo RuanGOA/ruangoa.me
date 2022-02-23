@@ -1,6 +1,8 @@
 import React from 'react';
 
-import Section from '../index';
+import { SectionComponent } from '../index';
+
+import { useConfig } from '../../../contexts/config.context';
 
 import { 
   Link,
@@ -9,6 +11,8 @@ import {
 } from '../styled';
 
 export default function Contact() {
+  const { theme } = useConfig();
+
   const data = {
     'Github: ruangoa': 'https://github.com/ruangoa',
     'LinkedIn: ruangoa': 'https://www.linkedin.com/in/ruangoa',
@@ -17,10 +21,14 @@ export default function Contact() {
   };
 
   return (
-    <Section title="Contato">
+    <SectionComponent title="Contato">
       <List>
       {Object.entries(data).map(([key, url]) => (
-        <ItemList key={key} className="dotted">
+        <ItemList 
+          key={key} 
+          className="dotted"
+          theme={theme}
+        >
           <Link
             href={url}
             target="_blank"
@@ -31,6 +39,6 @@ export default function Contact() {
         </ItemList>
       ))}
       </List>
-    </Section>
+    </SectionComponent>
   );
 }

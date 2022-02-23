@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from '../index';
+import { SectionComponent } from '../index';
 
 import {
   TagContainer,
@@ -15,12 +15,12 @@ export default function Skills() {
   ];
 
   return (
-    <Section title="Experiência com">
+    <SectionComponent title="Experiência com">
       <TagContainer>
         {data.map((item) => (
           <Tag key={item}>{item}</Tag> 
         ))}
       </TagContainer>
-    </Section>
+    </SectionComponent>
   );
 }

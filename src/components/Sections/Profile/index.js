@@ -1,24 +1,24 @@
 import React from 'react';
 
-import Section from '../index';
+import { SectionComponent } from '../index';
 
 import {
   Text
 } from '../styled';
 
 export default function Profile() {
-  const text = `Sou estudante de computação, me interesso em
-resolver problemas com programação, e também em
-construir conhecimentos que me ajudem a superar
-obtáculos futuros. Gosto muito de novos desafios e de
-resolver problemas em time. Procuro oportunidades de
-crescimento profissional e também de auxiliar o
-crescimento da companhia em que trabalho, de forma a
-criar uma relação mútua.`;
+  const data = [ 
+    'Sou estudante de Ciência da Computação na Universidade Federal de Campina Grande, com previsão de término em meados de 2023. Atualmente estou aprendendo principalmente desenvolvimento web, ferramentas devops e aprendizado de máquina.',
+    'Atualmente estou trabalhando no projeto ePol, uma parceria entre o SPLab (Laboratório de Práticas de Software) e a Polícia Federal do Brasil.',
+    'Projetos Open Source me interessam muito, e estou sempre procurando alguns deles no Github, se você acha que minha ajuda será boa para algum desses, me avise!']
 
   return (
-    <Section title="Perfil">
-      <Text>{text}</Text>
-    </Section>
+    <SectionComponent title="Perfil">
+      {data.map((text) => (
+        <Text>
+          {text}
+        </Text>
+      ))}
+    </SectionComponent>
   );
 }
