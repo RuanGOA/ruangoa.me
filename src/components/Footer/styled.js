@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  width: 100%;
-
-  padding: 1em 0;
+  padding: .5em 0;
 
   display: flex;
   align-items: center;
@@ -13,6 +11,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const Text = styled.p`
-  font-weight: bold;
+  font-size: 1em;
+  font-weight: 500;
   color: var(--highlight-color);
 `;
