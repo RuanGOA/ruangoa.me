@@ -25,7 +25,7 @@ export const LanguageItem = styled.button`
   padding: .15em .25em;
 
   &.active {
-    background: #C4C4C4;
+    background: var(--white);
     color: var(--highlight-color);
   }
 
