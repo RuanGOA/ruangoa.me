@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Page = styled.div`
+export const PageWithBackground = styled.div`
   width: 100vw;
   height: 100vh;
 
@@ -25,7 +25,7 @@ export const Card = styled.div`
 
   padding: 2em 7.5em;
 
-  background-color: var(--presentation-background-color-light);
+  background-color: var(--presentation-background-color-${props => props.theme});
 
   border-radius: 25px;
   border: 3px solid var(--highlight-color);
