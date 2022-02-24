@@ -7,26 +7,31 @@ export const Menu = styled.ul`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   gap: 1em;
 `;
 
 export const ItemMenu = styled(Link)`
-  color: #F0F0F0;
+  text-align: center;
+
+  color: var(--white);
   font-size: 1.35em;
 
   cursor: pointer;
 
   list-style-type: none;
 
+  padding: .25em;
+
+  border-radius: 5px;
+
   &:hover {
     color: var(--highlight-color);
   }
 
   &.active {
-    text-decoration: underline;
-    color: var(--highlight-color);
+    color: var(--black);
+    background: var(--highlight-color);
   }
 
   transition: all 0.5s;

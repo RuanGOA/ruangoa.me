@@ -5,13 +5,15 @@ export const LinkButtons = styled.div`
 	display: flex;
 	align-content: center;
 	justify-content: space-evenly;
+
+	& > a {
+		fill: var(--text-color-${props => props.theme});
+	}
 `;
 
 export const Icon = styled.a`
 	width: 2.5em;
 	cursor: pointer;
-
-	fill: var(--black);
 
 	&:hover {
 		fill: var(--highlight-color);

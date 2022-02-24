@@ -12,7 +12,7 @@ export default function PageMenu() {
 
   const data = {
     'Apresentação': { path: '/', number: 1 },
-    'Portfolio': { path: '/portfolio', number: 2 },
+    'Portfólio': { path: '/portfolio', number: 2 },
     'Projetos': { path: '/projects', number: 3 }
   };
 

@@ -7,7 +7,7 @@ export const Aside = styled.aside`
 
   background: #323232;
 
-  padding: 2em;
+  padding: 2vw;
 
   display: grid;
   grid-template-rows: auto fit-content(5vh) fit-content(10vh);

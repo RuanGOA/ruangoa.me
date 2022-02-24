@@ -5,13 +5,13 @@ import ProfileImage from '../ProfileImage';
 import JobTitle from '../JobTitle';
 import SocialButtons from '../SocialButtons';
 
-export default function Presentation() {
+export default function Presentation({ isPresentationPage }) {
   return (
     <>
-      <LogoName />
+      <LogoName isPresentationPage={isPresentationPage} />
       <ProfileImage />
       <JobTitle />
-      <SocialButtons />
+      <SocialButtons isPresentationPage={isPresentationPage} />
     </>
   );
 }
