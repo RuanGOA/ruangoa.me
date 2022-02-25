@@ -4,40 +4,35 @@ import { SectionComponent } from '../index';
 
 import { useConfig } from '../../../contexts/config.context';
 
-import { 
+import {
   Link,
   List,
   ItemList
 } from '../styled';
 
 export default function Contact() {
-  const { theme } = useConfig();
+  const { theme, getFieldData } = useConfig();
 
-  const data = {
-    'Github: ruangoa': 'https://github.com/ruangoa',
-    'LinkedIn: ruangoa': 'https://www.linkedin.com/in/ruangoa',
-    'Email: ruangoa0@gmail.com': 'mailto:ruangoa0@gmail.com',
-    'Discord: RuanGOA#8663': '#'
-  };
+  const data = getFieldData('contact');
 
   return (
-    <SectionComponent title="Contato">
+    <SectionComponent title={data['title']}>
       <List>
-      {Object.entries(data).map(([key, url]) => (
-        <ItemList 
-          key={key} 
-          className="dotted"
-          theme={theme}
-        >
-          <Link
-            href={url}
-            target="_blank"
-            rel="noreferrer"
+        {Object.entries(data['urls']).map(([key, url]) => (
+          <ItemList
+            key={key}
+            className="dotted"
+            theme={theme}
           >
-            {key}
-          </Link>
-        </ItemList>
-      ))}
+            <Link
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {key}
+            </Link>
+          </ItemList>
+        ))}
       </List>
     </SectionComponent>
   );

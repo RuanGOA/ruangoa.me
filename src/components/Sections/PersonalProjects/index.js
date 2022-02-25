@@ -1,43 +1,24 @@
 import React, { useEffect, useState } from 'react';
 
-import { github } from '../../../services/github';
+import { useConfig } from '../../../contexts/config.context';
 
-import { ProjectsSectionComponent } from '../index';
+import { ProjectsSectionComponent, searchRepositories } from '../index';
 
 import ProjectCard from '../ProjectCard';
 
 export default function PersonalProjects() {
-  const [projects, setProjects] = useState([]); 
+  const { getFieldData } = useConfig();
 
-  const data = [
-    'vim-trainer',
-    'move.it',
-    'letmeask',
-    'dockerized-flask-api',
-    'tiringa-vs-werewolf',
-    'competitive',
-    'corretor-ortografico',
-  ];
+  const [projects, setProjects] = useState([]);
+
+  const data = getFieldData('personalProjects');
 
   useEffect(() => {
-    async function searchRepositories() {
-      const repositoriesString = localStorage.getItem('@ruangoa/repositories');
-      let repositories;
-      if (!repositoriesString) {
-        repositories = await github.searchRepos(data);
-        localStorage.setItem('@ruangoa/repositories', JSON.stringify(repositories));
-      } else {
-        repositories = JSON.parse(repositoriesString);
-      }
-
-      setProjects(repositories);  
-    }
-
-    searchRepositories();
+    searchRepositories(data['repos'], '@ruangoa/repositories', setProjects);
   }, []);
 
   return (
-    <ProjectsSectionComponent title="Projetos Pessoais">
+    <ProjectsSectionComponent title={data['title']}>
       {projects.map((repo, index) => <ProjectCard {...repo} key={index} />)}
     </ProjectsSectionComponent>
   );

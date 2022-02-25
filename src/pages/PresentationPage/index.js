@@ -2,42 +2,34 @@ import React, { useEffect } from 'react';
 
 import { useConfig } from '../../contexts/config.context';
 
-import { useNavigate } from 'react-router-dom';
-
 import Presentation from '../../components/Presentation';
+import PortfolioButton from '../../components/PortfolioButton';
 
 import { getBackgroundPath } from '../../utils/getBackgroundPath';
 
 import {
   PageWithBackground,
-  Card,
-  PortfolioButton 
+  Card
 } from './styled';
 
 export default function PresentationPage() {
-  const navigate = useNavigate();
   const backgroundPath = getBackgroundPath();
-  const { setPageNumber, setPageName, theme } = useConfig();
-
-  const data = {
-    pageName: 'Apresentação',
-    pageNumber: 1
-  };
+  const { setPageNumber, setPageName, theme, getFieldData } = useConfig();
 
   useEffect(() => {
-    setPageName(data.pageName);
-    setPageNumber(data.pageNumber);
-  });
-
+    if (getFieldData) {
+      const data = getFieldData('presentationPage');
+      setPageName(data.pageName);
+      setPageNumber(data.pageNumber);
+    }
+  }, [getFieldData, setPageName, setPageNumber]);
 
   return (
-    <PageWithBackground backgroundPath={backgroundPath}> 
+    <PageWithBackground backgroundPath={backgroundPath}>
       <Card theme={theme}>
         <Presentation isPresentationPage={true} />
       </Card>
-      <PortfolioButton onClick={() => navigate('/portfolio')}>
-        Portfolio
-      </PortfolioButton>
+      <PortfolioButton />
     </PageWithBackground>
   );
 }

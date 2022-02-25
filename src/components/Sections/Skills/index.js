@@ -2,25 +2,27 @@ import React from 'react';
 
 import { SectionComponent } from '../index';
 
+import { useConfig } from '../../../contexts/config.context';
+
 import {
   TagContainer,
   Tag
 } from './styled';
 
 export default function Skills() {
-  const data = [
-    'Python', 'JavaScript', 'HTML', 'CSS', 'SCRUM', 
-    'Flask', 'React', 'Machine Learning', 'SQL', 
-    'Git', 'Docker', 'OpenShift'
-  ];
+  const { getFieldData } = useConfig();
+
+  const data = getFieldData('skills');
 
   return (
-    <SectionComponent title="Experiência com">
+    <SectionComponent title={data['title']}>
       <TagContainer>
-        {data.map((item) => (
-          <Tag key={item}>{item}</Tag> 
-        ))}
-      </TagContainer>
-    </SectionComponent>
+        {
+          data['tags'].map((item) => (
+            <Tag key={item}>{item}</Tag>
+          ))
+        }
+      </TagContainer >
+    </SectionComponent >
   );
 }

@@ -8,17 +8,15 @@ import PersonalProjects from '../../components/Sections/PersonalProjects';
 import OpenSourceProjects from '../../components/Sections/OpenSourceProjects';
 
 export default function ProjectsPage() {
-  const { setPageNumber, setPageName } = useConfig();
-
-  const data = {
-    pageName: 'Projetos',
-    pageNumber: 3
-  };
+  const { setPageNumber, setPageName, getFieldData } = useConfig();
 
   useEffect(() => {
-    setPageName(data.pageName);
-    setPageNumber(data.pageNumber);
-  });
+    if (getFieldData) {
+      const data = getFieldData('projectsPage');
+      setPageName(data.pageName);
+      setPageNumber(data.pageNumber);
+    }
+  }, [getFieldData, setPageName, setPageNumber]);
 
   return (
     <MainContentContainer>

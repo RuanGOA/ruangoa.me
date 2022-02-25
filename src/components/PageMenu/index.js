@@ -8,13 +8,9 @@ import {
 } from './styled';
 
 export default function PageMenu() {
-  const { pageNumber } = useConfig();
+  const { pageNumber, getFieldData } = useConfig();
 
-  const data = {
-    'Apresentação': { path: '/', number: 1 },
-    'Portfólio': { path: '/portfolio', number: 2 },
-    'Projetos': { path: '/projects', number: 3 }
-  };
+  const data = getFieldData('pagemenu');
 
   return (
     <Menu>

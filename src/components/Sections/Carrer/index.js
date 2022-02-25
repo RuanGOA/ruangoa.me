@@ -2,28 +2,30 @@ import React from 'react';
 
 import { SectionComponent } from '../index';
 
-import { 
+import { useConfig } from '../../../contexts/config.context';
+
+import {
   Text,
   List,
   ItemList
 } from '../styled';
 
 export default function Carrer() {
-  const data = {
-    'ePol - Software Practices Laboratory [SPLab]': ['Desenvolvedor e Pesquisador', 'Março/2020 - Atualmente', 'Realizei pesquisas de modelos de Machine Learning utilizando Python; Desenvolvi APIs REST em Flask (Python); Desenvolvi um protótipo frontend para integração com APIs desenvolvidas no projeto, utilizanndo React (JavaScript); Utilizei ferramentas de DevOps como Docker, OpenShift e Jenkins, realizando implantações em ambientes de produção e de homologação.']
-  };
+  const { getFieldData } = useConfig();
+
+  const data = getFieldData('carrer');
 
   return (
-    <SectionComponent title="Carreira">
+    <SectionComponent title={data['title']}>
       <List>
-      {Object.entries(data).map(([key, items]) => (
+        {Object.entries(data['jobs']).map(([key, items]) => (
           <ItemList key={key}>
             <Text className="bold">{key}</Text>
             {items.map((item) => (
               <Text>{item}</Text>
             ))}
           </ItemList>
-      ))}
+        ))}
       </List>
     </SectionComponent>
   );

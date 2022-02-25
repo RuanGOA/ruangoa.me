@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { github } from '../../services/github';
+
 import { useConfig } from '../../contexts/config.context';
 
 import {
@@ -20,7 +22,7 @@ export function SectionComponent(props) {
       {props.children}
     </Section>
   );
-};
+}
 
 export function ProjectsSectionComponent(props) {
   return (
@@ -31,4 +33,17 @@ export function ProjectsSectionComponent(props) {
       </ProjectsContainer>
     </ProjectSection>
   )
-};
+}
+
+export async function searchRepositories(data, storageName, setProjects) {
+  const repositoriesString = localStorage.getItem(storageName);
+  let repositories;
+  if (!repositoriesString) {
+    repositories = await github.searchRepos(data);
+    localStorage.setItem(storageName, JSON.stringify(repositories));
+  } else {
+    repositories = JSON.parse(repositoriesString);
+  }
+
+  setProjects(repositories);  
+}

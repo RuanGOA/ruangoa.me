@@ -12,24 +12,21 @@ import Education from '../../components/Sections/Education';
 import Awards from '../../components/Sections/Awards';
 import Carrer from '../../components/Sections/Carrer';
 import Courses from '../../components/Sections/Courses';
-import Footer from '../../components/Footer';
 
 import {
   PresentationContainer
 } from './styled';
 
 export default function PortfolioPage() {
-  const { setPageNumber, setPageName } = useConfig();
-
-  const data = {
-    pageName: 'Portfólio',
-    pageNumber: 2
-  };
+  const { setPageNumber, setPageName, getFieldData } = useConfig();
 
   useEffect(() => {
-    setPageName(data.pageName);
-    setPageNumber(data.pageNumber);
-  });
+    if (getFieldData) {
+      const data = getFieldData('portfolioPage');
+      setPageName(data.pageName);
+      setPageNumber(data.pageNumber);
+    }
+  }, [getFieldData, setPageName, setPageNumber]);
 
   return (
     <MainContentContainer>

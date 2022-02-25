@@ -5,35 +5,36 @@ import {
   useState
 } from 'react';
 
+import { data } from '../data/index';
+
 export const ConfigContext = createContext({});
 
 export function ConfigProvider(props) {
   const [pageNumber, setPageNumber] = useState(0);
   const [pageName, setPageName] = useState('');
-  const [language, setLanguage] = useState('PT');
-  const [theme, setTheme] = useState('');
+  const [language, setLanguage] = useState('EN');
+  const [theme, setTheme] = useState('dark');
+
+  const getFieldData = (field) => {
+    return data[language][field];
+  };
+
+  useEffect(() => {
+    console.log(data);
+  }, [data])
 
   const contextValue = {
     pageNumber, setPageNumber,
     language, setLanguage,
     pageName, setPageName,
-    theme, setTheme
-  }
+    theme, setTheme,
+    getFieldData
+  };
 
   useEffect(() => {
-    const themeStorage = localStorage.getItem('@ruangoa/theme');
-
-		setTheme(themeStorage || 'dark');
-  }, []);
-
-  useEffect(() => {
-		document.title = `@ruangoa - ${pageName}`;
-		window.scrollTo(0, 0);
-	}, [pageName]);
-
-  useEffect(() => {
-		localStorage.setItem('@ruangoa/theme', theme);
-	}, [theme]);
+    document.title = `@ruangoa - ${pageName}`;
+    window.scrollTo(0, 0);
+  }, [pageName]);
 
   return (
     <ConfigContext.Provider value={contextValue}>
@@ -43,7 +44,7 @@ export function ConfigProvider(props) {
 }
 
 export function useConfig() {
-	const context = useContext(ConfigContext);
+  const context = useContext(ConfigContext);
 
-	return { ...context };
+  return { ...context };
 };
