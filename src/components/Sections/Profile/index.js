@@ -15,8 +15,8 @@ export default function Profile() {
 
   return (
     <SectionComponent title={data.title}>
-      {data.text.map((text) => (
-        <Text>
+      {data.text.map((text, index) => (
+        <Text key={index}>
           {text}
         </Text>
       ))}

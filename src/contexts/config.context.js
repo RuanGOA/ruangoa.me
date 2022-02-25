@@ -25,10 +25,6 @@ export function ConfigProvider(props) {
     setTheme(themeStorage || 'dark');
   }, []);
 
-  useEffect(() => {
-    console.log(data);
-  }, [data])
-
   const contextValue = {
     pageNumber, setPageNumber,
     language, setLanguage,

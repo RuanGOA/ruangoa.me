@@ -21,8 +21,8 @@ export default function Carrer() {
         {Object.entries(data['jobs']).map(([key, items]) => (
           <ItemList key={key}>
             <Text className="bold">{key}</Text>
-            {items.map((item) => (
-              <Text>{item}</Text>
+            {items.map((item, index) => (
+              <Text key={index}>{item}</Text>
             ))}
           </ItemList>
         ))}

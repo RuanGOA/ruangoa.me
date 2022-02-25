@@ -11,12 +11,13 @@ import {
 export default function ChangeLanguage() {
   const { language, setLanguage } = useConfig();
 
-  const data = [ 'PT', 'EN' ];
+  const data = ['PT', 'EN'];
 
   return (
     <LanguageContainer>
       {data.map((item) => (
-        <LanguageItem 
+        <LanguageItem
+          key={item}
           onClick={() => setLanguage(item)}
           className={language === item ? 'active' : ''}
         >
