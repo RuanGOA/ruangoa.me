@@ -13,8 +13,4 @@ export const ThemeButton = styled.button`
   transition: all 0.5s;
 
   padding: 0;
-
-  & > svg {
-    width: 5em;
-  }
 `;

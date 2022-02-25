@@ -9,7 +9,7 @@ export const TagContainer = styled.div`
 `;
 
 export const Tag = styled.p`
-  font-size: 1.25em;
+  font-size: var(--text-font-size);
   padding: .25em;
 
   border-radius: 5px;

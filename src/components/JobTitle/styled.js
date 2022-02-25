@@ -7,7 +7,7 @@ export const Title = styled.p`
 
   text-transform: uppercase;
 
-  font-size: 1.5em;
+  font-size: var(--main-title-size);
   font-weight: 500;
 
   transition: all 0.5s;

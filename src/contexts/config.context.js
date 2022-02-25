@@ -21,8 +21,10 @@ export function ConfigProvider(props) {
 
   useEffect(() => {
     const themeStorage = localStorage.getItem('@ruangoa/theme');
+    const languageStorage = localStorage.getItem('@ruangoa/language');
 
     setTheme(themeStorage || 'dark');
+    setLanguage(languageStorage || 'EN');
   }, []);
 
   const contextValue = {
@@ -34,13 +36,17 @@ export function ConfigProvider(props) {
   };
 
   useEffect(() => {
+    localStorage.setItem('@ruangoa/theme', theme);
+  }, [theme]);
+
+  useEffect(() => {
+    localStorage.setItem('@ruangoa/language', language);
+  }, [language]);
+
+  useEffect(() => {
     document.title = `@ruangoa - ${pageName}`;
     window.scrollTo(0, 0);
   }, [pageName]);
-
-  useEffect(() => {
-    localStorage.setItem('@ruangoa/theme', theme);
-  }, [theme]);
 
   return (
     <ConfigContext.Provider value={contextValue}>

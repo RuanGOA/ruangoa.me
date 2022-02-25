@@ -12,7 +12,7 @@ export const Logo = styled.div`
   font-weight: 500;
 
 	& > svg {
-		width: 4em;
+		width: var(--site-symbol-size);
 	}
 `;
 
@@ -22,5 +22,6 @@ export const Name = styled.h2`
   letter-spacing: ${props => props.spacing}vw;
   text-transform: uppercase;
 
-  font-size: 1.75em;
+  font-size: var(--main-title-size);  
 `;
+//1.75em;

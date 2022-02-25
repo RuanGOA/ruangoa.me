@@ -10,12 +10,12 @@ export const LanguageContainer = styled.div`
 `;
 
 export const LanguageItem = styled.button`
-  font-size: 1.25em;
+  font-size: var(--menu-font-size);
 
   border-radius: 5px;
   border: 0;
 
-  color: #F0F0F0;
+  color: var(--white);
 
   cursor: pointer;
 

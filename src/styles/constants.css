@@ -16,4 +16,18 @@
 
 	--text-color-dark: #F0F0F0;
 	--text-color-light: #181818;
+
+	--main-title-size: 1.35vmax;
+	--title-font-size: 1.15vmax;
+	--menu-font-size: 1.05vmax;
+	--text-font-size: 1vmax;
+	--footer-font-size: 0.75vmax;
+
+	--social-buttons-size: 2.15vmax;
+
+	--theme-icon-size: 2vmax;
+
+	--profile-image-size: 12vmax;
+
+	--site-symbol-size: 4vmax;
 }

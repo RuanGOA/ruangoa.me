@@ -24,7 +24,7 @@ export const ProjectContainer = styled.a`
 `;
 
 export const ProjectName = styled.h4`
-  font-size: 1.35em;
+  font-size: var(--title-font-size);
   font-weight: 600;
 
   color: var(--white);
@@ -37,7 +37,7 @@ export const ProjectDescription = styled.p`
 
   justify-content: justify;
 
-  font-size: 1.25em;
+  font-size: var(--text-font-size);
 
   color: var(--white);
 `;
@@ -54,7 +54,7 @@ export const StatusItem = styled.div`
   align-items: center;
   justify-content: center;
 
-  font-size: 1.25em;
+  font-size: var(--text-font-size);
   gap: 0.5em;
   color: var(--white);
 

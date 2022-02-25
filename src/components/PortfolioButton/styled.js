@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const PortfolioButton = styled.button`
 	font-family: 'Saira', sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: var(--title-font-size);
 
   background: var(--grey);
 

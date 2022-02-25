@@ -5,7 +5,7 @@ export const Aside = styled.aside`
 
   grid-column: 1;
 
-  background: #323232;
+  background: var(--grey);
 
   padding: 2vw;
 
@@ -16,16 +16,15 @@ export const Aside = styled.aside`
 `;
 
 export const AsideMain = styled.div`
-  grid-row: 1;
-
   height: 100%;
+  grid-row: 1;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 
   & > svg {
-    width: 4em;
+    width: var(--site-symbol-size);
     cursor: pointer;
   }
 
@@ -42,7 +41,7 @@ export const AsideUtils = styled.div`
 
   & > button > svg {
     border-radius: 5px;
-    width: 2.5em;
+    width: var(--theme-icon-size);
     stroke: var(--highlight-color);
     padding: 0.25em;
 

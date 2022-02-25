@@ -11,7 +11,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const Text = styled.p`
-  font-size: 1em;
+  font-size: var(--footer-font-size);
   font-weight: 500;
   color: var(--highlight-color);
 `;

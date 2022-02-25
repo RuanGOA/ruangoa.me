@@ -15,7 +15,7 @@ export const ItemMenu = styled(Link)`
   text-align: center;
 
   color: var(--white);
-  font-size: 1.35em;
+  font-size: var(--menu-font-size);
 
   cursor: pointer;
 

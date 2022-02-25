@@ -13,6 +13,7 @@ export const LinkButtons = styled.div`
 
 export const Icon = styled.a`
 	width: 2.5em;
+	width: var(--social-buttons-size);
 	cursor: pointer;
 
 	&:hover {

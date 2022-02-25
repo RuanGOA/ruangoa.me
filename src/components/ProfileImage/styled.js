@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfilePicture = styled.img`
-  width: 15em;
+  width: var(--profile-image-size);
   height: auto; 
   border-radius: 25px;
   border: 3px solid var(--highlight-color);

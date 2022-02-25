@@ -13,7 +13,7 @@ export const Section = styled.section`
   color: var(--text-color-${props => props.theme});
 
   transition: all 0.5s;
-`; 
+`;
 
 export const ProjectSection = styled.section`
   width: 100%;
@@ -40,12 +40,12 @@ export const SectionName = styled.h3`
   letter-spacing: .15vw;
   text-transform: uppercase;
 
-  font-size: 1.5em;
+  font-size: var(--title-font-size);
   font-weight: 500;
 `;
 
 export const Text = styled.p`
-  font-size: 1.25em;
+  font-size: var(--text-font-size);
 
   margin-bottom: .25em;
 
@@ -72,7 +72,7 @@ export const ItemList = styled.li`
 `;
 
 export const Link = styled.a`
-  font-size: 1.25em;
+  font-size: var(--text-font-size);
 
   cursor: pointer;
   text-decoration: underline;
