@@ -20,6 +20,12 @@ export function ConfigProvider(props) {
   };
 
   useEffect(() => {
+    const themeStorage = localStorage.getItem('@ruangoa/theme');
+
+    setTheme(themeStorage || 'dark');
+  }, []);
+
+  useEffect(() => {
     console.log(data);
   }, [data])
 
@@ -35,6 +41,10 @@ export function ConfigProvider(props) {
     document.title = `@ruangoa - ${pageName}`;
     window.scrollTo(0, 0);
   }, [pageName]);
+
+  useEffect(() => {
+    localStorage.setItem('@ruangoa/theme', theme);
+  }, [theme]);
 
   return (
     <ConfigContext.Provider value={contextValue}>
