@@ -1,3 +1,7 @@
 body {
   font-family: 'Saira', sans-serif;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}

@@ -8,5 +8,12 @@
 	--presentation-background-color-light: rgba(240, 240, 240, 0.8);
 
 	--black: #181818;
+	--white: #F0F0F0;
 	--grey: #323232;
+
+	--background-color-dark: #181818;
+	--background-color-light: #F0F0F0;
+
+	--text-color-dark: #F0F0F0;
+	--text-color-light: #181818;
 }
