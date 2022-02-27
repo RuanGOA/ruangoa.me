@@ -17,17 +17,33 @@
 	--text-color-dark: #F0F0F0;
 	--text-color-light: #181818;
 
-	--main-title-size: 1.35vmax;
-	--title-font-size: 1.15vmax;
-	--menu-font-size: 1.05vmax;
-	--text-font-size: 1vmax;
-	--footer-font-size: 0.75vmax;
+	/*PC VARS*/
+	--main-title-size: 1.35vw;
+	--title-font-size: 1.15vw;
+	--menu-font-size: 1.05vw;
+	--text-font-size: 1vw;
+	--footer-font-size: 0.75vw;
 
-	--social-buttons-size: 2.15vmax;
+	--social-buttons-size: 2.15vw;
 
-	--theme-icon-size: 2vmax;
+	--theme-icon-size: 2vw;
 
-	--profile-image-size: 12vmax;
+	--profile-image-size: 12vw;
 
-	--site-symbol-size: 4vmax;
+	--site-symbol-size: 4vw;
+
+	/*MOBILE VARS*/
+	--main-title-size-mobile: 2.25vh;
+	--title-font-size-mobile: 2vh;
+	--menu-font-size-mobile: 2vh;
+	--text-font-size-mobile: 1.75vh;
+	--footer-font-size-mobile: 1.25vh;
+
+	--social-buttons-size-mobile: 3vh;
+	--site-symbol-size-mobile: 6vh;
+
+	--profile-image-size-mobile: 17.5vh;
+
+  --menu-retracted: 5vh;
+	--menu-not-retracted: auto;
 }

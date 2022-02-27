@@ -16,4 +16,8 @@ export const Tag = styled.p`
 
   background: var(--grey);
   color: var(--white);
+
+  @media (max-width: 1024px) {
+    font-size: var(--text-font-size-mobile);
+  }
 `;

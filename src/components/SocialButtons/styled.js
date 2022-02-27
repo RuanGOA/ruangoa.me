@@ -4,7 +4,8 @@ export const LinkButtons = styled.div`
   width: 100%;
 	display: flex;
 	align-content: center;
-	justify-content: space-evenly;
+	gap: 1em;
+	justify-content: center;
 
 	& > a {
 		fill: var(--text-color-${props => props.theme});
@@ -18,6 +19,10 @@ export const Icon = styled.a`
 
 	&:hover {
 		fill: var(--highlight-color);
+	}
+
+  @media (max-device-width: 1024px) {
+    width: var(--social-buttons-size-mobile);
 	}
 
 	transition: all 0.5s;

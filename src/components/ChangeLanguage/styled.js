@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const LanguageContainer = styled.div`
+  width: fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -28,6 +29,10 @@ export const LanguageItem = styled.button`
     background: var(--white);
     color: var(--highlight-color);
   }
+
+  @media (max-device-width: 1024px) {
+    font-size: var(--menu-font-size-mobile);
+	}
 
   transition: all 0.5s;
 `;

@@ -6,4 +6,8 @@ export const ProfilePicture = styled.img`
   border-radius: 25px;
   border: 3px solid var(--highlight-color);
   transition: all 0.5s;
+
+  @media (max-device-width: 1024px) {
+    width: var(--profile-image-size-mobile);
+	}
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useConfig } from '../contexts/config.context';
 
-import LateralMenu from '../components/LateralMenu';
+import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 
 import {
@@ -15,7 +15,7 @@ export default function MainContentContainer(props) {
 
   return (
     <Page>
-      <LateralMenu /> 
+      <Menu /> 
       <Main theme={theme}>
         {props.children}
         <Footer />

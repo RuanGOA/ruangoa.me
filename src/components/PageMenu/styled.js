@@ -9,6 +9,12 @@ export const Menu = styled.ul`
   flex-direction: column;
 
   gap: 1em;
+
+  @media (max-device-width: 1024px) {
+    gap: 1.5vh;
+    flex-direction: row;
+    width: auto;
+	}
 `;
 
 export const ItemMenu = styled(Link)`
@@ -33,6 +39,10 @@ export const ItemMenu = styled(Link)`
     color: var(--black);
     background: var(--highlight-color);
   }
+
+  @media (max-device-width: 1024px) {
+    font-size: var(--menu-font-size-mobile);
+	}
 
   transition: all 0.5s;
 `;

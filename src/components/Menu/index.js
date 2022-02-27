@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import { isMobile } from 'react-device-detect';
-
 import TopMenu from './RetractableMenu';
 import LateralMenu from './LateralMenu';
 

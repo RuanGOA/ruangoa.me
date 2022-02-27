@@ -14,6 +14,12 @@ export const Logo = styled.div`
 	& > svg {
 		width: var(--site-symbol-size);
 	}
+
+  @media (max-device-width: 1024px) {
+    & > svg {
+      width: var(--site-symbol-size-mobile);
+    }
+	}
 `;
 
 export const Name = styled.h2`
@@ -23,5 +29,7 @@ export const Name = styled.h2`
   text-transform: uppercase;
 
   font-size: var(--main-title-size);  
+  @media (max-device-width: 1024px) {
+    font-size: var(--main-title-size-mobile);
+	}
 `;
-//1.75em;

@@ -10,5 +10,9 @@ export const Title = styled.p`
   font-size: var(--main-title-size);
   font-weight: 500;
 
+  @media (max-device-width: 1024px) {
+    font-size: var(--main-title-size-mobile);
+	}
+
   transition: all 0.5s;
 `;

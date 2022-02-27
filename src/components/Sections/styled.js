@@ -3,16 +3,21 @@ import styled from 'styled-components';
 export const Section = styled.section`
   width: 100%;
   height: fit-content;
+  font-size: var(--text-font-size);
 
   display: flex;
   flex-direction: column;
   gap: 1em;
-  
+
   text-align: justify;
 
   color: var(--text-color-${props => props.theme});
 
   transition: all 0.5s;
+  @media (max-device-width: 1024px) {
+    font-size: var(--text-font-size-mobile);
+    gap: 1vh;
+  }
 `;
 
 export const ProjectSection = styled.section`
@@ -32,27 +37,49 @@ export const ProjectsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3em;
+
+  @media (max-device-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: center;
+
+    gap: 1em;
+  }
+
 `;
 
 export const SectionName = styled.h3`
+  font-size: var(--title-font-size);
   color: var(--highlight-color);
 
   letter-spacing: .15vw;
   text-transform: uppercase;
 
-  font-size: var(--title-font-size);
   font-weight: 500;
+
+  @media (max-device-width: 1024px) {
+    font-size: var(--title-font-size-mobile);
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const Text = styled.p`
   font-size: var(--text-font-size);
-
   margin-bottom: .25em;
 
   &.bold {
     font-weight: 600;
   }
-  
+
+  @media (max-device-width: 1024px) {
+    font-size: var(--text-font-size-mobile);
+  }
+
+
   transition: all 0.5s;
 `;
 
@@ -72,8 +99,6 @@ export const ItemList = styled.li`
 `;
 
 export const Link = styled.a`
-  font-size: var(--text-font-size);
-
   cursor: pointer;
   text-decoration: underline;
 
