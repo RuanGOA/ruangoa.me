@@ -2,12 +2,12 @@ import React from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-import ChangeTheme from '../ChangeTheme';
-import ChangeLanguage from '../ChangeLanguage';
-import PageMenu from '../PageMenu';
-import SocialButtons from '../SocialButtons';
+import ChangeTheme from '../../ChangeTheme';
+import ChangeLanguage from '../../ChangeLanguage';
+import PageMenu from '../../PageMenu';
+import SocialButtons from '../../SocialButtons';
 
-import { ReactComponent as PortfolioIcon } from '../../assets/icon.svg';
+import { ReactComponent as PortfolioIcon } from '../../../assets/icon.svg';
 
 import {
   Aside,
