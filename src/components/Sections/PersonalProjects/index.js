@@ -2,13 +2,17 @@ import React, { useEffect, useState } from 'react';
 
 import { useConfig } from '../../../contexts/config.context';
 
+import { ReactComponent as LoadingIcon } from '../../../assets/loading.svg';
+
 import { ProjectsSectionComponent, searchRepositories } from '../index';
+
+import { LoadingContainer } from '../styled';
 
 import ProjectCard from '../ProjectCard';
 
 export default function PersonalProjects() {
   const { getFieldData } = useConfig();
-
+  const [isLoading, setIsLoading] = useState(true);
   const [projects, setProjects] = useState([]);
 
   const data = getFieldData('personalProjects');
@@ -17,9 +21,17 @@ export default function PersonalProjects() {
     searchRepositories(data['repos'], '@ruangoa/repositories', setProjects);
   }, []);
 
+  useEffect(() => {
+    if (projects.length > 0) {
+      setIsLoading(false);
+    }
+  }, [projects]);
+
   return (
     <ProjectsSectionComponent title={data['title']}>
-      {projects.map((repo, index) => <ProjectCard {...repo} key={index} />)}
+      {isLoading ? 
+        (<LoadingContainer><LoadingIcon /></ LoadingContainer>) :
+        (projects.map((repo, index) => <ProjectCard {...repo} key={index} />))}
     </ProjectsSectionComponent>
   );
 }

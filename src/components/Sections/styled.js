@@ -114,3 +114,11 @@ export const Link = styled.a`
 
   transition: all 0.5s;
 `;
+
+export const LoadingContainer = styled.div`
+  grid-column: 1 / -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
