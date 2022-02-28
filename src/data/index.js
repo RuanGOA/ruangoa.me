@@ -93,7 +93,7 @@ export const data = {
         'front-hoco'
       ]
     },
-    'footer': 'ruangoa.me © 2021 Criado por Ruan Gomes'
+    'footer': 'ruangoa.me © 2022 | Desenvolvido por Ruan Gomes | Projetado por Ruan Gomes e Vinicius Siqueira'
   },
   'EN': {
     'presentationPage': {
@@ -189,6 +189,6 @@ export const data = {
         'front-hoco'
       ]
     },
-    'footer': 'ruangoa.me © 2021 Created by Ruan Gomes'
+    'footer': 'ruangoa.me © 2022 | Developed by Ruan Gomes | Designed by Ruan Gomes and Vinicius Siqueira'
   }
 }
