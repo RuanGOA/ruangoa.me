@@ -14,7 +14,10 @@ export const RetractContainer = styled.div`
   width: 100%;
   height: auto;
 
-  padding: 0.25em;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0.5em;
 
   transition: all 0.5s;
 `;
@@ -52,7 +55,7 @@ export const MenuUtils = styled.div`
   display: flex;
   align-items: center;
 
-  gap: 5vw;
+  gap: 2vw;
 
   & > * > svg {
     width: 3.5vh;

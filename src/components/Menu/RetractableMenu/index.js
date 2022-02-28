@@ -27,16 +27,16 @@ export default function TopMenu() {
     <TopMenuContainer retracted={isRetracted}>
       <RetractContainer>
         <RetractButton onClick={handleRectract}><RetractIcon /></RetractButton>
+        <MenuUtils>
+          <ChangeTheme />
+          <ChangeLanguage />
+        </ MenuUtils>
       </ RetractContainer>
       {(isRetracted) ? (
         <></>
       ) : (
         <MenuContainer retracted={isRetracted}>
           <PageMenu />
-          <MenuUtils>
-            <ChangeTheme />
-            <ChangeLanguage />
-          </MenuUtils>
           <SocialButtons />
         </ MenuContainer>
       )}
