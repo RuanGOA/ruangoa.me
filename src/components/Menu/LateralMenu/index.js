@@ -13,7 +13,8 @@ import {
   Aside,
   AsideMain,
   AsideUtils,
-  AsideFooter
+  AsideFooter,
+  UtilContainer
 } from './styled';
 
 export default function LateralMenu() {
@@ -25,13 +26,15 @@ export default function LateralMenu() {
         <PortfolioIcon onClick={() => navigate('/portfolio')} />
         <PageMenu />
       </AsideMain>
-      <AsideUtils>
-        <ChangeLanguage />
-        <ChangeTheme />
-      </AsideUtils>
-      <AsideFooter>
-        <SocialButtons isPresentationPage={false} />
-      </AsideFooter>
+      <UtilContainer>
+        <AsideUtils>
+          <ChangeLanguage />
+          <ChangeTheme />
+        </AsideUtils>
+        <AsideFooter>
+          <SocialButtons isPresentationPage={false} />
+        </AsideFooter>
+      </UtilContainer>
     </Aside>
   );
 }

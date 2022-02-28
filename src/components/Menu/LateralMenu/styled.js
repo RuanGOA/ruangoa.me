@@ -9,14 +9,16 @@ export const Aside = styled.aside`
 
   padding: 2vw;
 
-  display: grid;
-  grid-template-rows: auto fit-content(5vh) fit-content(10vh);
-  align-items: center;
-  gap: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
 `;
+  //grid-template-rows: auto fit-content(5vh) fit-content(10vh);
+//align-items: center;
+//gap: 3em;
 
 export const AsideMain = styled.div`
-  height: 100%;
   grid-row: 1;
 
   display: flex;
@@ -31,9 +33,17 @@ export const AsideMain = styled.div`
   gap: 3em;
 `;
 
+export const UtilContainer = styled.div`
+  height: fit-content;
+  display: flex;
+
+  gap: 2em;
+
+  flex-direction: column;
+`;
+
 export const AsideUtils = styled.div`
   height: auto;
-  grid-row: 2;
 
   display: flex;
   justify-content: space-evenly;
@@ -54,9 +64,6 @@ export const AsideUtils = styled.div`
 `;
 
 export const AsideFooter = styled.div`
-  grid-row: 3;
-  padding-bottom: 3em;
-
   & > * > a {
     width: 2em;
   }
