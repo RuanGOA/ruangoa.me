@@ -55,7 +55,7 @@ export const MenuUtils = styled.div`
   display: flex;
   align-items: center;
 
-  gap: 2vw;
+  gap: 5vw;
 
   & > * > svg {
     width: 3.5vh;
