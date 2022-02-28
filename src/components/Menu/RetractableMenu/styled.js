@@ -35,7 +35,7 @@ export const RetractButton = styled.button`
 
   & > svg {
     fill: var(--white);
-    width: 2em;
+    width: 3.5vh;
   }
 `;
 
