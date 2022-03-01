@@ -14,9 +14,6 @@ export const Aside = styled.aside`
   align-items: space-between;
   justify-content: space-between;
 `;
-  //grid-template-rows: auto fit-content(5vh) fit-content(10vh);
-//align-items: center;
-//gap: 3em;
 
 export const AsideMain = styled.div`
   grid-row: 1;
