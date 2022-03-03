@@ -93,7 +93,7 @@ export const data = {
         'front-hoco'
       ]
     },
-    'footer': 'ruangoa.me © 2022| Desenvolvido por Ruan Gomes'
+    'footer': 'ruangoa.me © 2022 | Desenvolvido por Ruan Gomes'
   },
   'EN': {
     'presentationPage': {
