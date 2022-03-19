@@ -19,7 +19,7 @@ export default function OpensourceProjects() {
 
   useEffect(() => {
     searchRepositories(data['repos'], '@ruangoa/repositories-opensource', setProjects);
-  }, []);
+  }, [data]);
 
   useEffect(() => {
     if (projects.length > 0) {

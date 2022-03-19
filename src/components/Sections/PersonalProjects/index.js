@@ -19,7 +19,7 @@ export default function PersonalProjects() {
 
   useEffect(() => {
     searchRepositories(data['repos'], '@ruangoa/repositories', setProjects);
-  }, []);
+  }, [data]);
 
   useEffect(() => {
     if (projects.length > 0) {

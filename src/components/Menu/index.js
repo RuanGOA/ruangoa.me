@@ -21,7 +21,7 @@ export default function Menu() {
 
       window.addEventListener('resize', handleResize);
     }
-  }, [hasWindow]); 
+  }); 
 
   return (
     <>
