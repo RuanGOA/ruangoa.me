@@ -18,6 +18,7 @@ export default function PresentationPage() {
   const { setPageNumber, setPageName, theme, getFieldData } = useConfig();
   const [isLoading, setIsLoading] = useState(true);
   const [backgroundPath, setBackgroundPath] = useState();
+  const data = getFieldData('presentationPage');
 
   useEffect(() => {
     if (getBackgroundPath) {
@@ -27,12 +28,17 @@ export default function PresentationPage() {
   }, []);
 
   useEffect(() => {
-    if (getFieldData) {
-      const data = getFieldData('presentationPage');
+    if (data) {
       setPageName(data.pageName);
       setPageNumber(data.pageNumber);
     }
-  }, [getFieldData, setPageName, setPageNumber]);
+  }, [data, getFieldData, setPageName, setPageNumber]);
+
+  useEffect(() => {
+    if (data && backgroundPath && theme && getFieldData && isLoading) {
+      setIsLoading(false);
+    } 
+  }, [data, backgroundPath, theme, getFieldData, isLoading, setIsLoading]);
 
   return (
     <>
