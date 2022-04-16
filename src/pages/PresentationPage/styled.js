@@ -37,3 +37,12 @@ export const Card = styled.div`
     padding: 2em 1em;
 	}
 `;
+
+export const PageCentralizer = styled.div`
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
