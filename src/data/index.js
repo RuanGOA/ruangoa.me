@@ -119,7 +119,7 @@ export const data = {
         'name': 'Quebrando o gelo',
         'date': '16/04/2021', 
         'language': 'Pt-Br', 
-        'description': 'Este é o primeiro post da minha implementação de blog nesse meu site pessoal, espero que curtam o que vai ser repassado nesses textos.', 
+        'description': 'Seja bem vindo(a), pessoa da internet. Este é o primeiro post do que seria a minha segunda implementação de blog em um site pessoal, espero que você goste do que vai ser repassado nesses posts.'
       },
     ],
     'footer': 'ruangoa.me © 2022 | Desenvolvido por Ruan Gomes',
@@ -243,7 +243,7 @@ export const data = {
         'name': 'Quebrando o gelo',
         'date': '16/04/2021', 
         'language': 'Pt-Br', 
-        'description': 'Este é o primeiro post da minha implementação de blog nesse meu site pessoal, espero que curtam o que vai ser repassado nesses textos.', 
+        'description': 'Seja bem vindo(a), pessoa da internet. Este é o primeiro post do que seria a minha segunda implementação de blog em um site pessoal, espero que você goste do que vai ser repassado nesses posts.'
       },
     ],
     'footer': 'ruangoa.me © 2022 | Developed by Ruan Gomes'
