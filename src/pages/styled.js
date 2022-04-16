@@ -30,12 +30,13 @@ export const Main = styled.main`
   background: var(--background-color-${props => props.theme});
 
   @media (max-device-width: 1024px) {
+    min-height: 100vh;
     height: auto;
     overflow: none;
     grid-column: 1;
     grid-row: 2;
-    grid-template-columns: 1fr;
-
+    display: flex;
+    flex-direction: column;
     gap: 2em;
 
     padding: 2em 1em;
