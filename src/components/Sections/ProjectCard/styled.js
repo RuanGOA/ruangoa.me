@@ -5,18 +5,23 @@ export const ProjectContainer = styled.a`
 
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.25em;
 
   border: 1px solid var(--highlight-color);
   border-radius: 25px;
   
   background: var(--grey);
 
-  &:hover > h4 {
-    color: var(--highlight-color);
+  &:hover {
+    -moz-transform: scale(1.0125);
+    -webkit-transform: scale(1.0125);
+    transform: scale(1.0125);
+    h4 {
+      color: var(--highlight-color);
+    }
   }
 
-  padding: 1.5em 2em;
+  padding: 0.5em 1em;
 
   box-sizing: border-box;
 
@@ -25,6 +30,8 @@ export const ProjectContainer = styled.a`
   @media (max-device-width: 1024px) {
     width: 80%;
   }
+
+  transition: all 0.5s;
 `;
 
 export const ProjectName = styled.h4`
@@ -54,7 +61,6 @@ export const ProjectDescription = styled.p`
 
 export const ProjectStatus = styled.div`
   width: 100%;
-  height: auto;
 
   display: flex;
   gap: 1.5em;

@@ -12,19 +12,19 @@ import {
 } from './styled';
 
 export default function ProjectCard(data) {
-	function emojiMarkdownTest(word: string) {
+	function emojiMarkdownTest(word) {
 		const re = /:+\S+:/;
 		return !re.test(word);
 	}
 
-	function standardizesDescription(description: string) {
+	function standardizesDescription(description) {
 		let descriptionModified = description
 			.split(' ')
 			.filter(emojiMarkdownTest)
 			.join(' ');
 
-		descriptionModified = descriptionModified.length > 30
-			? descriptionModified.slice(0, 30) + '...'
+		descriptionModified = descriptionModified.length > 25
+			? descriptionModified.slice(0, 25) + '...'
 			: descriptionModified;
 
 		return descriptionModified;
