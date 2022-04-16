@@ -10,6 +10,7 @@
 	--black: #181818;
 	--white: #F0F0F0;
 	--grey: #323232;
+	--light-grey: #808080;
 
 	--background-color-dark: #181818;
 	--background-color-light: #F0F0F0;
@@ -32,6 +33,12 @@
 
 	--site-symbol-size: 4vw;
 
+	/*--Markdown Vars - PC*/
+	--h1-font-size: 1.5vw;
+	--h2-font-size: 1.35vw;
+	--h3-font-size: 1.20vw;
+	--h4-font-size: 1.05vw;
+
 	/*MOBILE VARS*/
 	--main-title-size-mobile: 2.25vh;
 	--title-font-size-mobile: 2vh;
@@ -46,4 +53,10 @@
 
   --menu-retracted: 5vh;
 	--menu-not-retracted: auto;
+
+	/*--Markdown Vars - PC*/
+	--h1-font-size-mobile: 2.25vh;
+	--h2-font-size-mobile: 2.05vh;
+	--h3-font-size-mobile: 1.85vh;
+	--h4-font-size-mobile: 1.65vh;
 }
