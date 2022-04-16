@@ -25,7 +25,7 @@ export const PortfolioButton = styled.button`
 
   transition: transform 0.5s;
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: 1.25em;
 	}
 `;

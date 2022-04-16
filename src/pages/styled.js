@@ -8,7 +8,7 @@ export const Page = styled.div`
   display: grid;
   grid-template-columns: 2fr 12fr;
   
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     height: none;
@@ -29,7 +29,7 @@ export const Main = styled.main`
 
   background: var(--background-color-${props => props.theme});
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     min-height: 100vh;
     height: auto;
     overflow: none;
@@ -39,7 +39,7 @@ export const Main = styled.main`
     flex-direction: column;
     gap: 2em;
 
-    padding: 2em 1em;
+    padding: 3em;
 
     height: auto;
 	}

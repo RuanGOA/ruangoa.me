@@ -35,7 +35,7 @@ export const PostName = styled.h3`
 
   transition: all 0.5s;
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--title-font-size-mobile);
     gap: 1vh;
   }
@@ -55,7 +55,7 @@ export const PostTag = styled.label`
 
   font-size: var(--text-font-size);
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--text-font-size-mobile);
     gap: 1vh;
   }
@@ -68,7 +68,7 @@ export const PostInformation = styled.p`
   
   ${props => props.italic && 'font-style: italic;'};
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--menu-font-size-mobile);
     gap: 1vh;
   }
@@ -77,7 +77,7 @@ export const PostInformation = styled.p`
 export const PostDescription = styled.p`
   font-size: var(--text-font-size);
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--text-font-size-mobile);
     gap: 1vh;
   }

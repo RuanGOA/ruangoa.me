@@ -14,7 +14,7 @@ export const Section = styled.section`
   color: var(--text-color-${props => props.theme});
 
   transition: all 0.5s;
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--text-font-size-mobile);
     gap: 1vh;
   }
@@ -38,7 +38,7 @@ export const ProjectsContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 3em;
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +60,7 @@ export const SectionName = styled.h3`
 
   font-weight: 500;
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--title-font-size-mobile);
     width: 100%;
     text-align: center;
@@ -75,7 +75,7 @@ export const Text = styled.p`
     font-weight: 600;
   }
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--text-font-size-mobile);
   }
 

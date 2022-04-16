@@ -66,7 +66,7 @@ export const PostContainer = styled.main`
     text-align: left;
   }
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     width: 100%;
     padding: 0 1em;
 
@@ -116,7 +116,7 @@ export const LoadingContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     width: 100%;
   }
 `;

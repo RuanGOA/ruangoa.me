@@ -57,6 +57,8 @@ export const MenuUtils = styled.div`
 
   gap: 5vw;
 
+  padding: 0 2em;
+
   & > * > svg {
     width: 3.5vh;
     stroke: var(--highlight-color);

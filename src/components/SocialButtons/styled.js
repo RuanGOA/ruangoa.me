@@ -21,7 +21,7 @@ export const Icon = styled.a`
 		fill: var(--highlight-color);
 	}
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     width: var(--social-buttons-size-mobile);
 	}
 

@@ -15,7 +15,7 @@ export const Card = styled.div`
   border: 3px solid var(--highlight-color);
   box-shadow: 4px 5px 15px -4px var(--black);
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     padding: 2em 1em;
   }
 `;

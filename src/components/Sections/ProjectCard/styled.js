@@ -27,7 +27,7 @@ export const ProjectContainer = styled.a`
 
   cursor: pointer;
   
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     width: 80%;
   }
 
@@ -41,7 +41,7 @@ export const ProjectName = styled.h4`
   color: var(--white);
 
   transition: all 0.5s;
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--title-font-size-mobile);
   }
 `;
@@ -54,7 +54,7 @@ export const ProjectDescription = styled.p`
 
   color: var(--white);
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--text-font-size-mobile);
   }
 `;
@@ -65,7 +65,7 @@ export const ProjectStatus = styled.div`
   display: flex;
   gap: 1.5em;
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     gap: 5vw;
   }
 `;
@@ -84,7 +84,7 @@ export const StatusItem = styled.div`
     font-size: 1em;
   }
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--text-font-size-mobile);
     gap: 0.25em;
   }

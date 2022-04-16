@@ -10,7 +10,7 @@ export const Menu = styled.ul`
 
   gap: 1em;
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     gap: 1.5vh;
     flex-direction: row;
     width: auto;
@@ -40,7 +40,7 @@ export const ItemMenu = styled(Link)`
     background: var(--highlight-color);
   }
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--menu-font-size-mobile);
 	}
 

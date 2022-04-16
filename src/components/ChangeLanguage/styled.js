@@ -30,7 +30,7 @@ export const LanguageItem = styled.button`
     color: var(--highlight-color);
   }
 
-  @media (max-device-width: 1024px) {
+  @media (max-width: 1024px) {
     font-size: var(--menu-font-size-mobile);
 	}
 
