@@ -9,15 +9,36 @@ export const data = {
       'pageNumber': 2
     },
     'projectsPage': {
-      pageName: 'Projetos',
-      pageNumber: 3
+      'pageName': 'Projetos',
+      'pageNumber': 3
+    },
+    'blogPage': {
+      'pageName': 'Blog',
+      'pageNumber': 4
+    },
+    'postPage': {
+      'pageNumber': 5
     },
     'portfoliobutton': 'Portfólio',
     'jobtitle': 'Desenvolvedor de Software',
     'pagemenu': {
-      'Apresentação': { path: '/', number: 1 },
-      'Portfólio': { path: '/portfolio', number: 2 },
-      'Projetos': { path: '/projects', number: 3 }
+      'Apresentação': { 
+        'path': '/', 
+        'number': 1 
+      },
+      'Portfólio': { 
+        'path': '/portfolio', 
+        'number': 2 
+      },
+      'Projetos': { 
+        'path': '/projects', 
+        'number': 3 
+      },
+      'Blog': {
+        'path': '/blog',
+        'number': 4
+      }
+
     },
     'profile': {
       'title': 'Perfil',
@@ -93,7 +114,15 @@ export const data = {
         'front-hoco'
       ]
     },
-    'footer': 'ruangoa.me © 2022 | Desenvolvido por Ruan Gomes'
+    'blogPosts': [
+      { 
+        'name': 'Quebrando o gelo',
+        'date': '16/04/2021', 
+        'language': 'Pt-Br', 
+        'description': 'Este é o primeiro post da minha implementação de blog nesse meu site pessoal, espero que curtam o que vai ser repassado nesses textos.', 
+      },
+    ],
+    'footer': 'ruangoa.me © 2022 | Desenvolvido por Ruan Gomes',
   },
   'EN': {
     'presentationPage': {
@@ -105,15 +134,35 @@ export const data = {
       'pageNumber': 2
     },
     'projectsPage': {
-      pageName: 'Projects',
-      pageNumber: 3
+      'pageName': 'Projects',
+      'pageNumber': 3
+    },
+    'blogPage': {
+      'pageName': 'Blog',
+      'pageNumber': 4
+    },
+    'postPage': {
+      'pageNumber': 5
     },
     'portfoliobutton': 'Portfolio',
     'jobtitle': 'Software Developer',
     'pagemenu': {
-      'Presentation': { path: '/', number: 1 },
-      'Portfolio': { path: '/portfolio', number: 2 },
-      'Projects': { path: '/projects', number: 3 }
+      'Presentation': { 
+        'path': '/', 
+        'number': 1 
+      },
+      'Portfolio': { 
+        'path': '/portfolio', 
+        'number': 2 
+      },
+      'Projects': { 
+        'path': '/projects', 
+        'number': 3 
+      },
+      'Blog': {
+        'path': '/blog',
+        'number': 4
+      }
     },
     'profile': {
       'title': 'Profile',
@@ -189,6 +238,14 @@ export const data = {
         'front-hoco'
       ]
     },
+    'blogPosts': [
+      { 
+        'name': 'Quebrando o gelo',
+        'date': '16/04/2021', 
+        'language': 'Pt-Br', 
+        'description': 'Este é o primeiro post da minha implementação de blog nesse meu site pessoal, espero que curtam o que vai ser repassado nesses textos.', 
+      },
+    ],
     'footer': 'ruangoa.me © 2022 | Developed by Ruan Gomes'
   }
 }
