@@ -1,8 +1,8 @@
-> Autor: Ruan Gomes  
-> GitHub: ruangoa  
-> LinkedIn: ruangoa  
->   
-> Data: 14 de Março de 2022  
+> **Autor**: Ruan Gomes  
+> **GitHub**: ruangoa  
+> **LinkedIn**: ruangoa  
+> **Email**: ruangoa0@gmail.com  
+> **Data**: *14 de Março de 2022*  
 
 # Quebrando o gelo 
 
@@ -16,7 +16,7 @@ Desde o início ano de 2020 até hoje, trabalho no projeto chamado ePol, criado 
 
 ## Motivação para um blog
 
-Sempre gostei muito de consumir conteúdo de diversas plataformas, como vídeos, livros, artigos e podcasts. Alguns anos atrás, me perguntava o que teria para oferecer a alguém que consumiria algum conteúdo produzido por mim, e sinceramente não cheguei a uma resposta, mesmo depois de pensar bastante sobre isso. Há alguns meses atrás que vi um [vídeo](https://www.youtube.com/watch?v=PGxTuv6k0KI) muito interessante do Filipe Deschamps sobre hábitos de desenvolvedores deveriam ter, que inclusive recomendo muito. Em certo momento desse vídeo, transcrevendo aqui de forma uma resumida, o Filipe fala que o momento ideal para expor algo é durante o aprendizado, isso faz com que você organize as ideias para conseguir explicar melhor para quem vai absorvê-las, e consequentemente, aprender com isso. Achei esse conselho muito inspirador, porém, não gostaria de ter que me adaptar a uma plataforma de blog, então decidi exercitar alguns conceitos de programação web, e treinar a utilização de ferramentas de hospedagem para criar um site para portfólio, e encaixar um blog nele, e aqui estamos nós.
+Sempre gostei muito de consumir conteúdo de diversas plataformas, como vídeos, livros, artigos e podcasts. Alguns anos atrás, me perguntava o que teria para oferecer a alguém que consumiria algum conteúdo produzido por mim, e sinceramente não cheguei a uma resposta, mesmo depois de pensar bastante sobre isso. Há alguns meses atrás que vi um [vídeo](https://www.youtube.com/watch?v=PGxTuv6k0KI) muito interessante do Filipe Deschamps sobre hábitos de desenvolvedores deveriam ter, que inclusive recomendo muito. Em certo momento desse vídeo, transcrevendo aqui de forma resumida, o Filipe fala que o momento ideal para expor algo é durante o aprendizado, isso faz com que você organize as ideias para conseguir explicar melhor para quem vai absorvê-las, e consequentemente, aprender com isso. Achei esse conselho muito inspirador, porém, não gostaria de ter que me adaptar a uma plataforma de blog, então decidi exercitar alguns conceitos de programação web, e treinar a utilização de ferramentas de hospedagem para criar um site para portfólio, e encaixar um blog nele, e aqui estamos nós.
 
 ## Como o blog vai funcionar
 
