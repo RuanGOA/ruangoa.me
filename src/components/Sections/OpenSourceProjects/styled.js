@@ -9,7 +9,7 @@ export const ProjectCard = styled.a`
   gap: 1em;
 
   border: 1px solid var(--highlight-color);
-  border-radius: 25px;
+  border-radius: 5px;
   
   background: var(--grey);
 

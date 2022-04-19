@@ -8,7 +8,7 @@ export const ProjectContainer = styled.a`
   gap: 0.25em;
 
   border: 1px solid var(--highlight-color);
-  border-radius: 25px;
+  border-radius: 15px;
   
   background: var(--grey);
 

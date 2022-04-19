@@ -16,7 +16,7 @@ export const github = {
 				const repositories = response.data.filter((repo) => repos.includes(repo.name.toLowerCase()));
 				return repositories.map((repo) => {
 					return {
-						name: repo.name,
+						name: repo.name.toLowerCase(),
 						description: repo.description ? repo.description.toString('utf8') : '...',
 						mainLanguage: repo.language,
 						stars: repo.stargazers_count,

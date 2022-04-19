@@ -36,7 +36,7 @@ export const ProjectsContainer = styled.div`
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3em;
+  gap: 1em;
 
   @media (max-width: 1024px) {
     display: flex;
