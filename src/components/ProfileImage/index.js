@@ -6,7 +6,7 @@ import {
 
 import profilePicturePath from './pic.jpeg';
 
-export default function ProfileImage({ isPresentationPage }) {
+export default function ProfileImage() {
   return (
     <ProfilePicture src={profilePicturePath} />
   );
