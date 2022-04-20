@@ -205,10 +205,10 @@ export const data = {
     'awards': {
       'title': 'Awards',
       'gains': {
-        'Silver Medal - Paraibana Olympiad in Informatics [OPI] (2019)': '#',
-        'Honorable Mention - Brazilian Astronomy Olympiad [OBA] (2016)': '#',
-        'Honorable Mention - Brazilian Public School Mathematics Olympiad [OBMEP] (2016)': 'https://drive.google.com/file/d/195_9XVkCFIVmHqiaUtqyywob1jHBwsPg/view?usp=sharing',
-        'Honorable Mention - Brazilian Public School Mathematics Olympiad [OBMEP] (2014)': 'https://drive.google.com/file/d/11GPkPepdHDYVzXfYoXsPyAf9rttfJLL0/view?usp=sharing'
+        'Silver Medal - Paraiba State Computer Olympiad (2019)': '#',
+        'Honorable Mention - Brazilian Astronomy Olympiad (2016)': '#',
+        'Honorable Mention - Brazilian Public School Mathematics Olympiad (2016)': 'https://drive.google.com/file/d/195_9XVkCFIVmHqiaUtqyywob1jHBwsPg/view?usp=sharing',
+        'Honorable Mention - Brazilian Public School Mathematics Olympiad (2014)': 'https://drive.google.com/file/d/11GPkPepdHDYVzXfYoXsPyAf9rttfJLL0/view?usp=sharing'
       }
     },
     'courses': {
