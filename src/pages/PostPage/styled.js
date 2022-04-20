@@ -34,6 +34,13 @@ export const PostContainer = styled.main`
 
   p {
     text-align: justify;
+
+    & > code {
+      color: var(--highlight-color);
+      background: #333;
+      padding: 0.25em;
+      border-radius: 5px;
+    }
   }
 
   a {
