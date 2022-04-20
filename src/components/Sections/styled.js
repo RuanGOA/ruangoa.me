@@ -86,7 +86,9 @@ export const Text = styled.p`
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: .25em;
+
+  list-style-position: inside;
 `;
 
 export const ItemList = styled.li`
@@ -94,7 +96,6 @@ export const ItemList = styled.li`
 
   &.dotted {
     list-style-type: circle;
-    margin-left: 1.5em; 
   }
 `;
 
