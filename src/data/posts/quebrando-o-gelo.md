@@ -2,7 +2,7 @@
 > **GitHub**: ruangoa  
 > **LinkedIn**: ruangoa  
 > **Email**: ruangoa0@gmail.com  
-> **Data**: *14 de Março de 2022*  
+> **Data**: *14 de Abril de 2022*  
 
 # Quebrando o gelo 
 

@@ -2,7 +2,7 @@
 > **GitHub**: ruangoa  
 > **LinkedIn**: ruangoa  
 > **Email**: ruangoa0@gmail.com  
-> **Data**: *19 de Março de 2022*  
+> **Data**: *19 de Abril de 2022*  
 
 # Padrões de Projeto 
 
