@@ -117,10 +117,18 @@ export const data = {
     'blogPosts': [
       { 
         'name': 'Quebrando o gelo',
+        'id': 'quebrando-o-gelo',
         'date': '16/04/2021', 
         'language': 'Pt-Br', 
         'description': 'Seja bem vindo(a), pessoa da internet. Este é o primeiro post do que seria a minha segunda implementação de blog em um site pessoal, espero que você goste do que vai ser repassado nesses posts.'
       },
+      { 
+        'name': 'Padrões de projeto',
+        'id': 'padroes-de-projeto',
+        'date': '19/04/2021', 
+        'language': 'Pt-Br', 
+        'description': 'Sabe-se que um código limpo e expansível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto são utilizados, visando uma boa mantenabilidade, para que seja possível realizar modificações e adições no código de forma mais simples e segura.',
+      }
     ],
     'footer': 'ruangoa.me © 2022 | Desenvolvido por Ruan Gomes',
   },
@@ -241,10 +249,18 @@ export const data = {
     'blogPosts': [
       { 
         'name': 'Quebrando o gelo',
+        'id': 'quebrando-o-gelo',
         'date': '16/04/2021', 
         'language': 'Pt-Br', 
         'description': 'Seja bem vindo(a), pessoa da internet. Este é o primeiro post do que seria a minha segunda implementação de blog em um site pessoal, espero que você goste do que vai ser repassado nesses posts.'
       },
+      { 
+        'name': 'Padrões de projeto',
+        'id': 'padroes-de-projeto',
+        'date': '19/04/2021', 
+        'language': 'Pt-Br', 
+        'description': 'Sabe-se que um código limpo e expansível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto são utilizados, visando uma boa mantenabilidade, para que seja possível realizar modificações e adições no código de forma mais simples e segura.',
+      }
     ],
     'footer': 'ruangoa.me © 2022 | Developed by Ruan Gomes'
   }
