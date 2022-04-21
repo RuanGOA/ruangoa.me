@@ -39,7 +39,7 @@ export const Main = styled.main`
     flex-direction: column;
     gap: 2em;
 
-    padding: 3em;
+    padding: 2.25em;
 
     height: auto;
 	}
