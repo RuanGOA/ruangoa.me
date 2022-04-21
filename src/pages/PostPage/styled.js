@@ -26,21 +26,23 @@ export const PostContainer = styled.main`
 
   h3 {
     font-size: var(--h3-font-size);
+    font-weight: 600;
   }
 
   h4 {
     font-size: var(--h4-font-size);
+    font-weight: 600;
   }
 
   p {
     text-align: justify;
+  }
 
-    & > code {
-      color: var(--highlight-color);
-      background: #333;
-      padding: 0.25em;
-      border-radius: 5px;
-    }
+  code {
+    color: var(--highlight-color);
+    background: #333;
+    padding: 0.1em 0.15em;
+    border-radius: 5px;
   }
 
   a {

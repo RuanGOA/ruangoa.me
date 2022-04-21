@@ -32,13 +32,12 @@ export default function PostPage() {
   }, []);
 
   useEffect(() => {
-    const capitalize = ([first, ...rest]) => first.toUpperCase() + rest.join('');
-
     if (getFieldData) {
-      const data = getFieldData('postPage');
-      const pageName = capitalize(postId.split('-').join(' '));
-      setPageName(pageName);
-      setPageNumber(data.pageNumber);
+      const dataPageType = getFieldData('postPage');
+      const postData = getFieldData('blogPosts').find(post => post.id === postId);
+
+      setPageName(postData.name);
+      setPageNumber(dataPageType.pageNumber);
     }
   }, [getFieldData, setPageName, setPageNumber, postId]);
 

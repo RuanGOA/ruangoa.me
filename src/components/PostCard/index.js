@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 
 import { useConfig } from '../../contexts/config.context';
 
+import { removeAccents } from '../../utils/removeAccents';
+
 import {
   PostContainer,
   PostName,
@@ -13,7 +15,8 @@ import {
 } from './styled';
 
 export default function PostCard({ 
-  name, 
+  name,
+  id,
   date, 
   language, 
   description
@@ -22,10 +25,8 @@ export default function PostCard({
 
   const navigator = useNavigate();
 
-  const postId = name.toLowerCase().split(' ').join('-');
-
   const handlePost = () => {
-    navigator(postId);
+    navigator(id);
   }
 
   return (
