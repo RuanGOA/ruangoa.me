@@ -77,7 +77,7 @@ export const PostContainer = styled.main`
 
   @media (max-width: 1024px) {
     width: 100%;
-    padding: 0 1em;
+    padding: 0;
 
     font-size: var(--text-font-size-mobile);
 
