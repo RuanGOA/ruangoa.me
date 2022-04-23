@@ -50,9 +50,9 @@ export const data = {
     'profile': {
       'title': 'Perfil',
       'text': [
-        'Sou estudante de Ciência da Computação na Universidade Federal de Campina Grande, com previsão de término em meados de 2023. Atualmente estou aprendendo principalmente desenvolvimento web, ferramentas devops e aprendizado de máquina.',
-        'Atualmente estou trabalhando no projeto ePol, uma parceria entre o SPLab (Laboratório de Práticas de Software) e a Polícia Federal do Brasil.',
-        'Projetos Open Source me interessam muito, e estou sempre procurando alguns deles no Github, se você acha que minha ajuda será boa para algum desses, me avise!'
+        'Sou estudante de Ciência da Computação na Universidade Federal de Campina Grande, com previsão de conclusão para meados de 2023. Gosto muito de aprender sobre diferentes áreas, pois sinto que sabendo sobre muitas coisas, consigo relacionar soluções e solucionar problemas de melhor forma que consigo.',
+        'Atualmente trabalho no projeto ePol, originado da parceria entre o SPLab (Software Practices Laboratory) e a Polícia Federal brasileira. Estou procurando aprender sobre engenharia de software, desenvolvimento web e algumas ferramentas devops.',
+        'Tenho bastante interesse em projetos Open Source, e estou sempre procurando por eles no GitHub, se imaginar que eu posso auxiliar em algum projeto que você tem em mente, me avise!'
       ]
     },
     'contact': {
@@ -196,9 +196,9 @@ export const data = {
     'profile': {
       'title': 'Profile',
       'text': [
-        'I am a Computer Science student at the Federal University of Campina Grande, scheduled to finish in mid-2023. I am currently learning mainly web development, devops tools and machine learning.',
-        'I am currently working on the ePol project, a partnership between SPLab (Software Practices Laboratory) and the Federal Police of Brazil.',
-        "Open Source projects interest me a lot, and I'm always looking for some of them on Github, if you think my help will be good for any of these, let me know!",
+        'I am a Computer Science student at the Federal University of Campina Grande, expected to finish in mid-2023. I really enjoy learning about different areas, because I feel that knowing about many things, I can relate solutions and solve problems in the best way I can.',
+        'Currently working on the ePol project, originated from the partnership between the SPLab (Software Practices Laboratory) and the Brazilian Federal Police. I am looking to learn about software engineering, web development and some devops tools.',
+        'Very interested in Open Source projects, and I am always looking for them on GitHub, if you think I can help with a project you have in mind, let me know!'
       ]
     },
     'contact': {
