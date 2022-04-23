@@ -134,7 +134,7 @@ export const data = {
         'id': 'padroes-de-projeto',
         'date': '19/04/2021', 
         'language': 'Pt-Br', 
-        'description': 'Sabe-se que um código limpo e expansível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto são utilizados, visando uma boa mantenabilidade, para que seja possível realizar modificações e adições no código de forma mais simples e segura.',
+        'description': 'Sabe-se que um código limpo e extensível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto são utilizados, visando uma boa mantenabilidade, para que seja possível realizar modificações e adições no código de forma mais simples e segura.',
       }
     ],
     'notFound': {
@@ -280,7 +280,7 @@ export const data = {
         'id': 'padroes-de-projeto',
         'date': '19/04/2021', 
         'language': 'Pt-Br', 
-        'description': 'Sabe-se que um código limpo e expansível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto são utilizados, visando uma boa mantenabilidade, para que seja possível realizar modificações e adições no código de forma mais simples e segura.',
+        'description': 'Sabe-se que um código limpo e extensível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto são utilizados, visando uma boa mantenabilidade, para que seja possível realizar modificações e adições no código de forma mais simples e segura.',
       }
     ],
     'notFound': {

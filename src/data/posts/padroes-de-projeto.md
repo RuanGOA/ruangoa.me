@@ -6,7 +6,7 @@
 
 # Padrões de Projeto 
 
-Sabe-se que um código limpo e expansível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto s
+Sabe-se que um código limpo e extensível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto s
 ão utilizados, visando uma boa mantenabilidade, para que seja possível realizar modificações e adições no código de forma mais simples e segura.
 
 ## O que é um padrão de projeto?
@@ -25,7 +25,7 @@ Há uma forma formal de descrever um padrão de projeto, e ela foi pensada para 
 
 - `Nome`: Um bom nome para o padrão é algo que pode facilitar o primeiro contato de outra pessoa.
 - `Objetivo`: É basicamente uma descrição do padrão, a forma como o padrão atua para resolver o problema.
-- `Problema`: O que esse padrão trata? O problema pode ser um bom guia para quem está buscando por ajuda em soluções.
+- `Problema`: Descreve o que o padrão trata, o problema pode ser um bom guia para quem está buscando por ajuda em soluções.
 - `Consequências`: Aqui são descritos os benefícios(e talvez malefícios) geradospela utilização do padrão.
 
 Sim, nem tudo na vida são flores, há certos padrões, com certas aplicações, que mesmo facilitando a resolução do seu problema, podem adicionar algo que pode prejudicar o código em algum aspecto, porém, a ideia é que tais prejuízos sejam controlados, e de toda forma, nada impede que você analise a ideia por trás de um desses padrões de projeto, e adapte-a ao seu código, de modo que os prejuízos sejam minimizados.
