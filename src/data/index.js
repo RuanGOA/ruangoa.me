@@ -20,8 +20,12 @@ export const data = {
       'pageNumber': 5
     },
     'notFoundPage': {
-      'pageName': 'Not Found',
+      'pageName': 'Não Encontrado',
       'pageNumber': 6
+    },
+    'noContentPage': {
+      'pageName': 'Sem conteúdo',
+      'pageNumber': 7
     },
     'portfoliobutton': 'Portfólio',
     'jobtitle': 'Desenvolvedor de Software',
@@ -84,8 +88,8 @@ export const data = {
     'awards': {
       'title': 'Prêmios',
       'gains': {
-        'Medalha de Prata - Olimpíada Paraibana de Informática [OPI] (2019)': '#',
-        'Menção Honrosa - Olimpíada Brasileira de Astronomia [OBA] (2016)': '#',
+        'Medalha de Prata - Olimpíada Paraibana de Informática [OPI] (2019)': 'http://www.dsc.ufcg.edu.br/~opi/resultados/2019/resultado-avancado-junior-2019.pdf',
+        'Menção Honrosa - Olimpíada Brasileira de Astronomia [OBA] (2016)': 'http://ruangoa.me/204',
         'Menção Honrosa - Olimpíada Brasileira de Matemática das Escolas Públicas [OBMEP] (2016)': 'https://drive.google.com/file/d/195_9XVkCFIVmHqiaUtqyywob1jHBwsPg/view?usp=sharing',
         'Menção Honrosa - Olimpíada Brasileira de Matemática das Escolas Públicas [OBMEP] (2014)': 'https://drive.google.com/file/d/11GPkPepdHDYVzXfYoXsPyAf9rttfJLL0/view?usp=sharing'
       }
@@ -136,6 +140,9 @@ export const data = {
     'notFound': {
       'message': 'Conteúdo não encontrado'
     },
+    'noContent': {
+      'message': 'Sem conteúdo',
+    },
     'footer': 'ruangoa.me © 2022 | Desenvolvido por Ruan Gomes',
   },
   'EN': {
@@ -161,6 +168,10 @@ export const data = {
     'notFoundPage': {
       'pageName': 'Not Found',
       'pageNumber': 6
+    },
+    'noContentPage': {
+      'pageName': 'No Content',
+      'pageNumber': 7
     },
     'portfoliobutton': 'Portfolio',
     'jobtitle': 'Software Developer',
@@ -223,8 +234,8 @@ export const data = {
     'awards': {
       'title': 'Awards',
       'gains': {
-        'Silver Medal - Paraiba State Computer Olympiad (2019)': '#',
-        'Honorable Mention - Brazilian Astronomy Olympiad (2016)': '#',
+        'Silver Medal - Paraiba State Computer Olympiad (2019)': 'http://www.dsc.ufcg.edu.br/~opi/resultados/2019/resultado-avancado-junior-2019.pdf',
+        'Honorable Mention - Brazilian Astronomy Olympiad (2016)': 'http://ruangoa.me/204',
         'Honorable Mention - Brazilian Public School Mathematics Olympiad (2016)': 'https://drive.google.com/file/d/195_9XVkCFIVmHqiaUtqyywob1jHBwsPg/view?usp=sharing',
         'Honorable Mention - Brazilian Public School Mathematics Olympiad (2014)': 'https://drive.google.com/file/d/11GPkPepdHDYVzXfYoXsPyAf9rttfJLL0/view?usp=sharing'
       }
@@ -274,6 +285,9 @@ export const data = {
     ],
     'notFound': {
       'message': 'Content not found',
+    },
+    'noContent': {
+      'message': 'No content',
     },
     'footer': 'ruangoa.me © 2022 | Developed by Ruan Gomes'
   }
