@@ -62,6 +62,6 @@ export const AsideUtils = styled.div`
 
 export const AsideFooter = styled.div`
   & > * > a {
-    width: 2em;
+    width: 1.85vw;
   }
 `;

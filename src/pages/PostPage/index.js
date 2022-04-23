@@ -32,14 +32,14 @@ export default function PostPage() {
   }, []);
 
   useEffect(() => {
-    if (getFieldData) {
+    if (getFieldData && postText) {
       const dataPageType = getFieldData('postPage');
       const postData = getFieldData('blogPosts').find(post => post.id === postId);
 
       setPageName(postData.name);
       setPageNumber(dataPageType.pageNumber);
     }
-  }, [getFieldData, setPageName, setPageNumber, postId]);
+  }, [getFieldData, setPageName, setPageNumber, postId, postText]);
 
   return (
     <MainContentContainer>

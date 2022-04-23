@@ -19,6 +19,10 @@ export const data = {
     'postPage': {
       'pageNumber': 5
     },
+    'notFoundPage': {
+      'pageName': 'Not Found',
+      'pageNumber': 6
+    },
     'portfoliobutton': 'Portfólio',
     'jobtitle': 'Desenvolvedor de Software',
     'pagemenu': {
@@ -38,7 +42,6 @@ export const data = {
         'path': '/blog',
         'number': 4
       }
-
     },
     'profile': {
       'title': 'Perfil',
@@ -130,6 +133,9 @@ export const data = {
         'description': 'Sabe-se que um código limpo e expansível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto são utilizados, visando uma boa mantenabilidade, para que seja possível realizar modificações e adições no código de forma mais simples e segura.',
       }
     ],
+    'notFound': {
+      'message': 'Conteúdo não encontrado'
+    },
     'footer': 'ruangoa.me © 2022 | Desenvolvido por Ruan Gomes',
   },
   'EN': {
@@ -151,6 +157,10 @@ export const data = {
     },
     'postPage': {
       'pageNumber': 5
+    },
+    'notFoundPage': {
+      'pageName': 'Not Found',
+      'pageNumber': 6
     },
     'portfoliobutton': 'Portfolio',
     'jobtitle': 'Software Developer',
@@ -262,6 +272,9 @@ export const data = {
         'description': 'Sabe-se que um código limpo e expansível é o segredo de um bom ciclo de vida de um software, e em parte, é por isso que padrões de projeto são utilizados, visando uma boa mantenabilidade, para que seja possível realizar modificações e adições no código de forma mais simples e segura.',
       }
     ],
+    'notFound': {
+      'message': 'Content not found',
+    },
     'footer': 'ruangoa.me © 2022 | Developed by Ruan Gomes'
   }
 }

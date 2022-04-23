@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const LanguageContainer = styled.div`
   width: fit-content;
-  height: fit-content;
+  height: 100%;
   display: flex;
   justify-content: center;
 
