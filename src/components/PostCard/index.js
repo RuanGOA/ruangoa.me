@@ -4,8 +4,6 @@ import { useNavigate } from 'react-router-dom'
 
 import { useConfig } from '../../contexts/config.context';
 
-import { removeAccents } from '../../utils/removeAccents';
-
 import {
   PostContainer,
   PostName,
