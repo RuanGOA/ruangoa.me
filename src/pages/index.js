@@ -1,25 +1,24 @@
-import React from 'react';
+import React from "react";
 
-import { useConfig } from '../contexts/config.context';
+import Menu from "../components/Menu/";
+import Header from "../components/Header/";
+import Footer from "../components/Footer/";
 
-import Menu from '../components/Menu';
-import Footer from '../components/Footer';
+import { useConfig } from "../contexts/config.context";
 
-import {
-  Page,
-  Main
-} from './styled';
+import { Content } from "./style";
 
-export default function MainContentContainer(props) {
+export default function Base({ children }) {
   const { theme } = useConfig();
 
   return (
-    <Page>
-      <Menu /> 
-      <Main theme={theme}>
-        {props.children}
+    <>
+      <Header />
+      <Menu />
+      <Content theme={theme}>
+        {children}
         <Footer />
-      </Main>
-    </Page>
+      </Content>
+    </>
   );
 }

@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
-export const ThemeButton = styled.button`
+export const Button = styled.button`
   cursor: pointer;
 
   display: flex;
   align-items: center;
-
   height: fit-content;
 
   background: transparent;

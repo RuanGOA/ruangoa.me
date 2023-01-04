@@ -1,46 +1,50 @@
-import {
-  useContext,
-  createContext,
-  useEffect,
-  useState
-} from 'react';
+import { useContext, createContext, useEffect, useState, useRef } from "react";
 
-import { data } from '../data/index';
+import { data } from "../data/index";
 
 export const ConfigContext = createContext({});
 
 export function ConfigProvider(props) {
   const [pageNumber, setPageNumber] = useState(0);
-  const [pageName, setPageName] = useState('');
-  const [language, setLanguage] = useState('EN');
-  const [theme, setTheme] = useState('dark');
+  const [pageName, setPageName] = useState("");
+  const [language, setLanguage] = useState("EN");
+  const [theme, setTheme] = useState("dark");
+  const [menuActive, setMenuActive] = useState(false);
+  const contactRef = useRef(null);
 
   const getFieldData = (field) => {
     return data[language][field];
   };
 
   useEffect(() => {
-    const themeStorage = localStorage.getItem('@ruangoa/theme');
-    const languageStorage = localStorage.getItem('@ruangoa/language');
+    const themeStorage = localStorage.getItem("@ruangoa/theme");
+    const languageStorage = localStorage.getItem("@ruangoa/language");
 
-    setTheme(themeStorage || 'dark');
-    setLanguage(languageStorage || 'EN');
+    setTheme(themeStorage || "dark");
+    setLanguage(languageStorage || "EN");
   }, []);
 
   const contextValue = {
-    pageNumber, setPageNumber,
-    language, setLanguage,
-    pageName, setPageName,
-    theme, setTheme,
-    getFieldData
+    pageNumber,
+    setPageNumber,
+    language,
+    setLanguage,
+    pageName,
+    setPageName,
+    theme,
+    setTheme,
+    getFieldData,
+    menuActive,
+    setMenuActive,
+    contactRef,
   };
 
   useEffect(() => {
-    localStorage.setItem('@ruangoa/theme', theme);
+    localStorage.setItem("@ruangoa/theme", theme);
   }, [theme]);
 
   useEffect(() => {
-    localStorage.setItem('@ruangoa/language', language);
+    localStorage.setItem("@ruangoa/language", language);
   }, [language]);
 
   useEffect(() => {
@@ -59,4 +63,4 @@ export function useConfig() {
   const context = useContext(ConfigContext);
 
   return { ...context };
-};
+}

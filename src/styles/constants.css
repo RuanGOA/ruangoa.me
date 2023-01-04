@@ -1,62 +1,66 @@
 :root {
-  --background-color-dark: #30475E;
-	--background-color-light: #F0F0F0;
+  --background-color-dark: #30475e;
+  --background-color-light: #f0f0f0;
 
-	--highlight-color: #F05454;
+  --highlight-color: #f05454;
 
-	--presentation-background-color-dark: rgba(24, 24, 24, 0.8);
-	--presentation-background-color-light: rgba(240, 240, 240, 0.8);
+  --presentation-background-color-dark: rgba(24, 24, 24, 0.8);
+  --presentation-background-color-light: rgba(240, 240, 240, 0.8);
 
-	--black: #181818;
-	--white: #F0F0F0;
-	--grey: #323232;
-	--light-grey: #808080;
+  --black: #181818;
+  --white: #f0f0f0;
+  --grey: #323232;
+  --light-grey: #808080;
 
-	--background-color-dark: #181818;
-	--background-color-light: #F0F0F0;
+  --background-color-dark: #181818;
+  --background-color-light: #f0f0f0;
 
-	--text-color-dark: #F0F0F0;
-	--text-color-light: #181818;
+  --background-color-dark-reversed: #f0f0f0;
+  --background-color-light-reversed: #181818;
 
-	/*PC VARS*/
-	--main-title-size: 1.35vw;
-	--title-font-size: 1.15vw;
-	--menu-font-size: 1.05vw;
-	--text-font-size: 1vw;
-	--footer-font-size: 0.75vw;
+  --text-color-dark: #f0f0f0;
+  --text-color-light: #181818;
 
-	--social-buttons-size: 2.15vw;
+  /*PC VARS*/
+  --page-title-size: 1.75vw;
+  --main-title-size: 1.35vw;
+  --title-font-size: 1.15vw;
+  --menu-font-size: 1.05vw;
+  --text-font-size: 1vw;
+  --footer-font-size: 0.75vw;
 
-	--theme-icon-size: 2vw;
+  --social-buttons-size: 1.5vw;
 
-	--profile-image-size: 12vw;
+  --theme-icon-size: 3em;
 
-	--site-symbol-size: 4vw;
+  --profile-image-size: 12vw;
 
-	/*--Markdown Vars - PC*/
-	--h1-font-size: 1.5vw;
-	--h2-font-size: 1.35vw;
-	--h3-font-size: 1.20vw;
-	--h4-font-size: 1.05vw;
+  --site-symbol-size: 5vw;
 
-	/*MOBILE VARS*/
-	--main-title-size-mobile: 2vh;
-	--title-font-size-mobile: 2vh;
-	--menu-font-size-mobile: 2vh;
-	--text-font-size-mobile: 1.75vh;
-	--footer-font-size-mobile: 1.15vh;
+  /*--Markdown Vars - PC*/
+  --h1-font-size: 1.5vw;
+  --h2-font-size: 1.35vw;
+  --h3-font-size: 1.2vw;
+  --h4-font-size: 1.05vw;
 
-	--social-buttons-size-mobile: 3vh;
-	--site-symbol-size-mobile: 6vh;
+  /*MOBILE VARS*/
+  --main-title-size-mobile: 2vh;
+  --title-font-size-mobile: 2vh;
+  --menu-font-size-mobile: 2vh;
+  --text-font-size-mobile: 1.75vh;
+  --footer-font-size-mobile: 1.15vh;
 
-	--profile-image-size-mobile: 17.5vh;
+  --social-buttons-size-mobile: 3vh;
+  --site-symbol-size-mobile: 6vh;
+
+  --profile-image-size-mobile: 17.5vh;
 
   --menu-retracted: 5vh;
-	--menu-not-retracted: auto;
+  --menu-not-retracted: auto;
 
-	/*--Markdown Vars - PC*/
-	--h1-font-size-mobile: 2.25vh;
-	--h2-font-size-mobile: 2.05vh;
-	--h3-font-size-mobile: 1.85vh;
-	--h4-font-size-mobile: 1.65vh;
+  /*--Markdown Vars - PC*/
+  --h1-font-size-mobile: 2.25vh;
+  --h2-font-size-mobile: 2.05vh;
+  --h3-font-size-mobile: 1.85vh;
+  --h4-font-size-mobile: 1.65vh;
 }

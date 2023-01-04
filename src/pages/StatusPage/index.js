@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import { useConfig } from '../../contexts/config.context';
+import { useConfig } from "../../contexts/config.context";
 
-import StatusCard from '../../components/StatusCard/';
+import StatusCard from "../../components/StatusCard/";
 
-import MainContentContainer from '../index';
+import BasePage from "../index";
 
-import { StatusPageContainer } from './styled';
+import { StatusPageContainer } from "./styled";
 
 export default function StatusPage(props) {
   const { setPageNumber, setPageName, getFieldData } = useConfig();
@@ -20,10 +20,10 @@ export default function StatusPage(props) {
   }, [getFieldData, setPageName, setPageNumber, props]);
 
   return (
-    <MainContentContainer>
+    <BasePage>
       <StatusPageContainer>
         <StatusCard {...props} />
       </StatusPageContainer>
-    </MainContentContainer>
+    </BasePage>
   );
 }

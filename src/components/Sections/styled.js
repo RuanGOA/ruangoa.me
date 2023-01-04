@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
@@ -11,7 +11,7 @@ export const Section = styled.section`
 
   text-align: justify;
 
-  color: var(--text-color-${props => props.theme});
+  color: var(--text-color-${(props) => props.theme});
 
   transition: all 0.5s;
   @media (max-width: 1024px) {
@@ -20,45 +20,14 @@ export const Section = styled.section`
   }
 `;
 
-export const ProjectSection = styled.section`
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-
-  grid-column: 1 / -1;
-
-  gap: 1em;
-`;
-
-export const ProjectsContainer = styled.div`
-  width: 100%;
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1em;
-
-  @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-template-columns: 1fr;
-    width: 100%;
-    text-align: center;
-
-    gap: 1em;
-  }
-
-`;
-
 export const SectionName = styled.h3`
   font-size: var(--title-font-size);
   color: var(--highlight-color);
 
-  letter-spacing: .15vw;
+  letter-spacing: 0.15vw;
   text-transform: uppercase;
 
-  font-weight: 500;
+  font-weight: 600;
 
   @media (max-width: 1024px) {
     font-size: var(--title-font-size-mobile);
@@ -69,7 +38,7 @@ export const SectionName = styled.h3`
 
 export const Text = styled.p`
   font-size: var(--text-font-size);
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 
   &.bold {
     font-weight: 600;
@@ -79,19 +48,23 @@ export const Text = styled.p`
     font-size: var(--text-font-size-mobile);
   }
 
-
   transition: all 0.5s;
 `;
 
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: .25em;
+  gap: 1em;
 
   list-style-position: inside;
+
+  &.dotted {
+    gap: 0.25em;
+  }
 `;
 
 export const ItemList = styled.li`
+  text-align: start;
   list-style-type: none;
 
   &.dotted {
@@ -103,10 +76,10 @@ export const Link = styled.a`
   cursor: pointer;
   text-decoration: underline;
 
-  color: var(--text-color-${props => props.theme});
+  color: var(--text-color-${(props) => props.theme});
 
   &:visited {
-    color: var(--text-color-${props => props.theme});
+    color: var(--text-color-${(props) => props.theme});
   }
 
   &:hover {
@@ -122,4 +95,4 @@ export const LoadingContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;

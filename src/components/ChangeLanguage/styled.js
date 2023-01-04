@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const LanguageContainer = styled.div`
   width: fit-content;
-  height: 100%;
+  height: fit-content;
   display: flex;
   justify-content: center;
 
@@ -16,23 +16,35 @@ export const LanguageItem = styled.button`
   border-radius: 5px;
   border: 0;
 
-  color: var(--white);
+  height: fit-content;
+
+  color: var(--text-color-${(props) => props.theme});
 
   cursor: pointer;
 
   text-transform: uppercase;
   background: transparent;
 
-  padding: .15em .25em;
+  padding: 0.35em;
 
   &.active {
-    background: var(--white);
+    background: var(--background-color-${(props) => props.theme}-reversed);
     color: var(--highlight-color);
   }
 
   @media (max-width: 1024px) {
     font-size: var(--menu-font-size-mobile);
-	}
+
+    &.active {
+      background: var(
+        --background-color-${(props) => (props.menu ? "light" : `${props.theme}-reversed`)}
+      );
+    }
+
+    color: var(
+      --text-color-${(props) => (props.menu ? "dark" : `${props.theme}`)}
+    );
+  }
 
   transition: all 0.5s;
 `;

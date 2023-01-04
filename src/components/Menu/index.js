@@ -1,33 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React from "react";
 
-import TopMenu from './RetractableMenu';
-import LateralMenu from './LateralMenu';
+import SocialButtons from "../SocialButtons";
+import PageList from "../PageList";
+
+import { useNavigate } from "react-router-dom";
+
+import { ReactComponent as PortfolioIcon } from "./assets/icon.svg";
+
+import { useConfig } from "../../contexts/config.context";
+
+import { Aside, RedirectsContainer, AsideToggler, Toggler } from "./style";
 
 export default function Menu() {
-  const hasWindow = typeof window !== 'undefined';
+  const { menuActive, setMenuActive } = useConfig();
+  const navigate = useNavigate();
 
-  function getWindowWidth() {
-    const width = hasWindow ? window.innerWidth : null;
-    return width;
-  }
-
-  const [widthViewport, setWidthViewport] = useState(getWindowWidth());
-
-  useEffect(() => {
-    if (hasWindow) {
-      function handleResize() {
-        setWidthViewport(getWindowWidth());
-      }
-
-      window.addEventListener('resize', handleResize);
-    }
-  }); 
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
 
   return (
     <>
-      {(widthViewport < 1025)
-        ? (<TopMenu />) 
-        : (<LateralMenu />)}
+      <AsideToggler className={menuActive ? "active" : ""} onClick={toggleMenu}>
+        <Toggler />
+      </AsideToggler>
+      <Aside className={menuActive ? "active" : ""}>
+        <RedirectsContainer>
+          <PortfolioIcon onClick={() => navigate("/")} />
+          <PageList />
+        </RedirectsContainer>
+        <SocialButtons />
+      </Aside>
     </>
   );
 }

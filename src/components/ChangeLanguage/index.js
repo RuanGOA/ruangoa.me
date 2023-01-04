@@ -1,17 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import { useConfig } from '../../contexts/config.context';
+import { useConfig } from "../../contexts/config.context";
 
-import {
-  LanguageContainer,
-  LanguageItem
-} from './styled';
-
+import { LanguageContainer, LanguageItem } from "./styled";
 
 export default function ChangeLanguage() {
-  const { language, setLanguage } = useConfig();
+  const { language, setLanguage, theme, menuActive } = useConfig();
 
-  const data = ['PT', 'EN'];
+  const data = ["PT", "EN"];
 
   return (
     <LanguageContainer>
@@ -19,7 +15,9 @@ export default function ChangeLanguage() {
         <LanguageItem
           key={item}
           onClick={() => setLanguage(item)}
-          className={language === item ? 'active' : ''}
+          className={language === item ? "active" : ""}
+          theme={theme}
+          menu={menuActive}
         >
           {item}
         </LanguageItem>

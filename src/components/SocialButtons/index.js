@@ -1,19 +1,15 @@
-import React from 'react';
-
-import { useConfig } from '../../contexts/config.context';
+import React from "react";
 
 import { ReactComponent as GithubIcon } from "./assets/github.svg";
 import { ReactComponent as LinkedinIcon } from "./assets/linkedin.svg";
 import { ReactComponent as InstagramIcon } from "./assets/instagram.svg";
 import { ReactComponent as EmailIcon } from "./assets/email.svg";
 
-import * as style from './styled';
+import * as style from "./styled";
 
-export default function SocialButtons({ isPresentationPage }) {
-  const { theme } = useConfig();
-
+export default function SocialButtons() {
   return (
-    <style.LinkButtons theme={isPresentationPage ? theme : 'dark'}>
+    <style.LinkButtons>
       <style.Icon
         href={"https://github.com/ruangoa/"}
         target="_blank"
@@ -35,10 +31,7 @@ export default function SocialButtons({ isPresentationPage }) {
       >
         <InstagramIcon />
       </style.Icon>
-      <style.Icon
-        href={"mailto:ruangoa0@gmail.com"}
-        rel="noreferrer"
-      >
+      <style.Icon href={"mailto:ruangoa0@gmail.com"} rel="noreferrer">
         <EmailIcon />
       </style.Icon>
     </style.LinkButtons>
