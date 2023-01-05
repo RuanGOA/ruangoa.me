@@ -27,3 +27,15 @@ export const Content = styled.main`
 export const Root = styled.div`
   background: var(--background-color-${(props) => props.theme});
 `;
+
+export const LoadingContainer = styled.div`
+  grid-column: 1 / -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+`;

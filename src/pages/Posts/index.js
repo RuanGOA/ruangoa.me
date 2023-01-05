@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import Base from "../";
 
@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 import { useConfig } from "../../contexts/config.context";
 import { usePosts } from "../../contexts/posts.context";
+
+import { ReactComponent as LoadingIcon } from "../../assets/loading.svg";
 
 import readingTime from "reading-time/lib/reading-time";
 
@@ -19,9 +21,12 @@ import {
   WrapContent,
 } from "./style";
 
+import { LoadingContainer } from "../style";
+
 export default function Posts() {
+  const [isLoading, setIsLoading] = useState(true);
   const { setPageNumber, setPageName, getFieldData } = useConfig();
-  const { posts } = usePosts();
+  const { posts, getPosts } = usePosts();
 
   const getTimeRead = (text) => {
     const time = readingTime(text).minutes;
@@ -44,6 +49,10 @@ export default function Posts() {
   }
 
   useEffect(() => {
+    getPosts(setIsLoading);
+  }, []);
+
+  useEffect(() => {
     if (getFieldData) {
       const data = getFieldData("postsPage");
       setPageName(data.pageName);
@@ -54,7 +63,11 @@ export default function Posts() {
   return (
     <Base>
       <WrapContent>
-        {posts &&
+        {isLoading ? (
+          <LoadingContainer>
+            <LoadingIcon />
+          </LoadingContainer>
+        ) : (
           Object.values(posts).map((post, i) => (
             <Link to={`/posts/${post.number}`}>
               <PostCard key={i}>
@@ -68,7 +81,8 @@ export default function Posts() {
                 </PostTimeRead>
               </PostCard>
             </Link>
-          ))}
+          ))
+        )}
       </WrapContent>
     </Base>
   );

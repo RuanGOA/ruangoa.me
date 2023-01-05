@@ -12,16 +12,19 @@ import { ReactComponent as LoadingIcon } from "../../assets/loading.svg";
 
 import MainContentContainer from "../index";
 
-import { PostContainer, LoadingContainer } from "./style";
+import { PostContainer } from "./style";
+
+import { LoadingContainer } from "../style";
 
 export default function PostPage() {
   const [post, setPost] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const { setPageNumber, setPageName, getFieldData, theme } = useConfig();
-  const { posts } = usePosts();
+  const { posts, getPosts } = usePosts();
   const { postId } = useParams();
 
   useEffect(() => {
+    getPosts();
     if (posts && postId) {
       setPost(posts[postId]);
       setIsLoading(false);

@@ -117,15 +117,3 @@ export const PostContainer = styled.main`
 
   transition: all 0.5s;
 `;
-
-export const LoadingContainer = styled.div`
-  grid-column: 1 / -1;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
-`;
