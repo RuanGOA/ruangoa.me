@@ -22,9 +22,9 @@ export default function PostPage() {
   const { setPageNumber, setPageName, getFieldData, theme } = useConfig();
   const { posts, getPosts } = usePosts();
   const { postId } = useParams();
+  getPosts();
 
   useEffect(() => {
-    getPosts();
     if (posts && postId) {
       setPost(posts[postId]);
       setIsLoading(false);

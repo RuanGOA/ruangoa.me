@@ -28,6 +28,8 @@ export default function Posts() {
   const { setPageNumber, setPageName, getFieldData } = useConfig();
   const { posts, getPosts } = usePosts();
 
+  getPosts(setIsLoading);
+
   const getTimeRead = (text) => {
     const time = readingTime(text).minutes;
 
@@ -49,10 +51,6 @@ export default function Posts() {
   }
 
   useEffect(() => {
-    getPosts(setIsLoading);
-  }, []);
-
-  useEffect(() => {
     if (getFieldData) {
       const data = getFieldData("postsPage");
       setPageName(data.pageName);
@@ -69,8 +67,8 @@ export default function Posts() {
           </LoadingContainer>
         ) : (
           Object.values(posts).map((post, i) => (
-            <Link to={`/posts/${post.number}`}>
-              <PostCard key={i}>
+            <Link to={`/posts/${post.number}`} key={i}>
+              <PostCard>
                 <PostInformations>
                   <PostTheme>{post.labels[0] && post.labels[0].name}</PostTheme>
                   <PostDate>{formatDate(post.date)}</PostDate>
