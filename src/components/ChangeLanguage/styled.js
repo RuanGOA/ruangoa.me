@@ -25,7 +25,7 @@ export const LanguageItem = styled.button`
   text-transform: uppercase;
   background: transparent;
 
-  padding: 0.35em;
+  padding: 0.25em;
 
   &.active {
     background: var(--background-color-${(props) => props.theme}-reversed);
