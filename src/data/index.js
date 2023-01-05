@@ -8,6 +8,13 @@ export const data = {
       pageName: "Resumo",
       pageNumber: 2,
     },
+    postsPage: {
+      pageName: "Posts",
+      pageNumber: 3,
+    },
+    postPage: {
+      pageNumber: 4,
+    },
     notFoundPage: {
       pageName: "Não Encontrado",
       pageNumber: 6,
@@ -26,6 +33,10 @@ export const data = {
       Resumo: {
         path: "/resume",
         number: 2,
+      },
+      Posts: {
+        path: "/posts",
+        number: 3,
       },
     },
     profile: {
@@ -156,6 +167,14 @@ export const data = {
       pageName: "Resume",
       pageNumber: 2,
     },
+    postsPage: {
+      pageName: "Posts",
+      pageNumber: 3,
+    },
+    postPage: {
+      pageName: "Posts",
+      pageNumber: 4,
+    },
     notFoundPage: {
       pageName: "Not Found",
       pageNumber: 6,
@@ -174,6 +193,10 @@ export const data = {
       Resume: {
         path: "/resume",
         number: 2,
+      },
+      Posts: {
+        path: "/posts",
+        number: 3,
       },
     },
     profile: {

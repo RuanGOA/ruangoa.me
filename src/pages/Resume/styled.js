@@ -13,7 +13,9 @@ export const PresentationContainer = styled.div`
 `;
 
 export const GridContent = styled.main`
-  padding: 3em 6em 1em 6em;
+  padding: 3em 15%;
+
+  padding-bottom: 1em;
 
   grid-column: 2;
 

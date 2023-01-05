@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { ConfigProvider } from "./contexts/config.context";
+import { PostsProvider } from "./contexts/posts.context";
 
 import Router from "./Router";
 
@@ -14,7 +15,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ConfigProvider>
-      <Router />
+      <PostsProvider>
+        <Router />
+      </PostsProvider>
     </ConfigProvider>
   </React.StrictMode>
 );

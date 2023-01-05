@@ -68,6 +68,7 @@ export const RedirectsContainer = styled.div`
   @media (max-width: 1024px) {
     justify-content: start;
     gap: 0;
+    margin-top: 1em;
     & > svg {
       width: 0;
     }
