@@ -18,7 +18,7 @@ export default function SectionAbout() {
       <div className="flex flex-col gap-4 text-justify items-center lg:text-left lg:items-start">
         <h2 className="text-3xl font-semibold text-highlight">{sectionAbout.title}</h2>
         {sectionAbout.text.map((text, i) => (
-          <p key={i} className="text-lg text-text-color-dark">
+          <p key={i} className="text-text-color-dark">
             {text}
           </p>
         ))}

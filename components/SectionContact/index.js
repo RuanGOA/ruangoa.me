@@ -11,7 +11,7 @@ export default function SectionContact() {
         <h2 className="text-3xl font-semibold text-highlight self-start">
           {sectionContact.title}
         </h2>
-        <p className="text-lg">{sectionContact.text}</p>
+        <p className="text">{sectionContact.text}</p>
         <SubSection>
           {sectionContact.links.map((item, i) => (
             <ListItem key={i}>
