@@ -12,28 +12,28 @@ export const sectionResume = {
     title: "Education",
     text: [
       {
+        title: "Federal University of Campina Grande - BSc. Computer Science",
+        time: "2018 August - 2023 December (expected)",
+      },
+      {
         title: "Federal Institute of Pernambuco - Technical Computer",
         time: "2014 - January - 2016 December",
       },
-      {
-        title: "Federal University of Campina Grande - BSc. Computer Science",
-        time: "2018 August - 2023 December (expected)",
-      }
     ]
   },
   carrer: {
     title: "Carrer",
     text: [
       {
+        title: "VTEX Lab - Distributed Systems Laboratory",
+        time: "2022 August - Currently",
+        description: "Assisted the team in improving the efficiency of the partner company's infrastructure. Mainly seeking to reduce the cost of purchasing VMs and improvements to be made in the cache of web systems."
+      },
+      {
         title: "ePol - Software Practices Laboratory",
         time: "2020 March - 2022 July",
         description: "Assisted in the development of a proof of concept for the Brazilian Federal Police. This project aimed to help the investigation processes of the Brazilian Federal Police through the development of a web application that uses artificial intelligence to identify common characteristics between groups of investigations.",
       },
-      {
-        title: "VTEX Lab - Distributed Systems Laboratory",
-        time: "2022 August - Currently",
-        description: "Assisted the team in improving the efficiency of the partner company's infrastructure. Mainly seeking to reduce the cost of purchasing VMs and improvements to be made in the cache of web systems."
-      }
     ]
   },
   awards: {
@@ -73,13 +73,13 @@ export const sectionResume = {
         url: "#",
       },
       {
-        title: "SCRUM Fundamentals [2021]",
+        title: "OpenShift I: Containers & Kubernetes (DO180) [2021]",
         url: "#",
       },
       {
-        title: "OpenShift I: Containers & Kubernetes (DO180) [2021]",
+        title: "SCRUM Fundamentals [2021]",
         url: "#",
-      }
+      },
     ]
   }
 }
