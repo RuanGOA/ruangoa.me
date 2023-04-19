@@ -6,13 +6,25 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    colors: {
+      'background-dark': '#0F1923',
+      'text-color-dark': '#D9D9D9',
+      'highlight': '#F05454',
+      'white': '#D9D9D9',
+      'red': '#FF0000',
+      'black': '#181818',
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontSize: {
+        base: "1em",
+        lg: "1.15em",
       },
+      fontFamily: {
+        "roboto-slab": "var(--font-roboto-slab)",
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography")
+  ],
 }
