@@ -17,8 +17,8 @@ export default function Header() {
           />
         </Link>
         <div className="flex flex-col justify-center">
-          <p className="text-text-color-dark text-xl font-semibold">Ruan Gomes</p>
-          <p className="text-text-color-dark text-xl font-normal">Reliability Researcher</p>
+          <p className="text-text-color-dark text-lg lg:text-xl font-semibold">Ruan Gomes</p>
+          <p className="text-text-color-dark text-lg lg:text-xl font-normal">Reliability Researcher</p>
         </div>
       </div>
       <PageSelect />

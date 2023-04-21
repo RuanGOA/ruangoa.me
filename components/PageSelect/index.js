@@ -7,7 +7,7 @@ export default function PageSelect() {
     <nav className="flex gap-3 items-center">
       {pageSelect.map((item, i) => (
         <Link key={i} href={item.url}>
-          <p className="text-lg text-black py-[0.05em] px-2 bg-highlight rounded-md cursor-pointer hover:scale-110 transition-scale duration-1000">{item.title}</p>
+          <p className="text text-black py-[0.05em] px-2 bg-highlight lg:text-lg rounded-md cursor-pointer hover:scale-110 transition-scale duration-1000">{item.title}</p>
         </Link>
       ))}
     </nav>
