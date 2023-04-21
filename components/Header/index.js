@@ -7,11 +7,11 @@ import PageSelect from "../PageSelect/"
 export default function Header() {
   return (
     <header className="bg-background-dark max-w p-6 flex justify-between flex-col md:flex-row gap-8 items-center md:justify-between">
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-center">
         <Link href="/">
           <Image
             priority
-            className="lg:w-16 h-auto w-10 cursor-pointer"
+            className="lg:w-16 h-auto w-12 cursor-pointer"
             src={portfolioIcon}
             alt="Go to home"
           />
