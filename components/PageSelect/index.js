@@ -27,7 +27,6 @@ export default function PageSelect(params) {
           <Link key={i} href={item.url}>
             <button
               type="button"
-              disabled={isCurrent}
               className={`
               text-black
               py-[0.05em]
@@ -37,6 +36,7 @@ export default function PageSelect(params) {
               duration-1000
               bg-${isCurrent ? 'highlight' : 'white'}
               ${!isCurrent && 'hover:scale-110'}
+              ${isCurrent && 'cursor-default'}
               `}
             >
               {item.title}
