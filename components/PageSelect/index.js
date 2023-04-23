@@ -25,8 +25,7 @@ export default function PageSelect(params) {
 
         return (
           <Link key={i} href={item.url}>
-            <button
-              type="button"
+            <p
               className={`
               text-black
               py-[0.05em]
@@ -40,7 +39,7 @@ export default function PageSelect(params) {
               `}
             >
               {item.title}
-            </button>
+            </p>
           </Link>
         )})}
     </nav>
