@@ -11,7 +11,7 @@ export default function Header() {
         <Link href="/">
           <Image
             priority
-            className="lg:w-16 h-auto w-12 cursor-pointer"
+            className="h-auto w-12 cursor-pointer"
             src={portfolioIcon}
             alt="Go to home"
           />
