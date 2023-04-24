@@ -35,8 +35,8 @@ export default function PageSelect(params) {
               rounded-md
               transition-scale
               duration-1000
-              bg-white
               ${isCurrent && 'bg-highlight'}
+              ${!isCurrent && 'bg-white'}
               ${!isCurrent && 'hover:scale-110'}
               `}
             >
