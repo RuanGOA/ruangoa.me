@@ -94,15 +94,15 @@ export const sectionContact = {
   links: [
     {
       title: "Github: ruangoa",
-      url: "#",
+      url: "https://github.com/RuanGOA",
     },
     {
       title: "LinkedIn: ruangoa",
-      url: "#",
+      url: "https://www.linkedin.com/in/ruangoa",
     },
     {
       title: "Email: ruangoa0@gmail.com",
-      url: "#",
+      url: "ruangoa0@gmail.com",
       isEmail: true,
     },
     {

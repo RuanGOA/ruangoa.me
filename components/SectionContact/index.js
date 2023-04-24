@@ -15,7 +15,7 @@ export default function SectionContact() {
         <SubSection>
           {sectionContact.links.map((item, i) => (
             <ListItem key={i}>
-              <a className="underline" href={item.url} target="_blank">{item.title}</a>
+              <a className="underline" href={`${item.isEmail ? 'mailto:' : ''}${item.url}`} target="_blank">{item.title}</a>
             </ListItem>
           ))}
         </SubSection>
