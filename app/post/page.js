@@ -2,7 +2,7 @@ import PostContent from "../../components/PostContent";
 
 export async function generateMetadata({ params }) {
   return {
-    title: `@ruangoa - Post`,
+    title: `Post | RuanGOA`,
   }
 }
 

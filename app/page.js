@@ -5,7 +5,7 @@ import SectionContact from "../components/SectionContact/";
 
 export async function generateMetadata({ params }) {
   return {
-    title: `@ruangoa - Resume`,
+    title: `Resume | RuanGOA`,
   }
 }
 

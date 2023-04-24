@@ -6,7 +6,7 @@ import { github } from "../../services/github";
 
 export async function generateMetadata({ params }) {
   return {
-    title: `@ruangoa - Posts`,
+    title: `Posts | RuanGOA`,
   }
 }
 
