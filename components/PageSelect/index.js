@@ -25,7 +25,9 @@ export default function PageSelect(params) {
 
         return (
           <Link key={i} href={item.url}>
-            <p
+            <button
+              type="button"
+              disabled={isCurrent}
               className={`
               text-black
               py-[0.05em]
@@ -33,13 +35,13 @@ export default function PageSelect(params) {
               rounded-md
               transition-scale
               duration-1000
-              ${isCurrent ? 'bg-highlight' : 'bg-white'}]
+              ${isCurrent && 'bg-highlight'}
+              bg-white
               ${!isCurrent && 'hover:scale-110'}
-              ${isCurrent && 'cursor-default'}
               `}
             >
               {item.title}
-            </p>
+            </button>
           </Link>
         )})}
     </nav>
