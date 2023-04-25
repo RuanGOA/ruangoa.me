@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
 
 export default function Home() {
   return (
-    <main className="max-w h-full">
+    <main className="max-w min-h-screen">
       <SectionMe />
       <SectionNow />
       <SectionFuture />
