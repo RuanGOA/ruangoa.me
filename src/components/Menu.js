@@ -6,7 +6,7 @@ export default function Menu() {
   const pages = [
     {
       name: "Blog",
-      compare: "/blog",
+      compare: "/",
     },
     {
       name: "About",

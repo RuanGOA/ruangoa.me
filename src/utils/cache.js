@@ -12,15 +12,17 @@ export function getCachedPosts() {
   return JSON.parse(data);
 }
 
-export function setCachedPosts(posts) {
-  const mappedPosts = posts.map(post => ({
-    title: post.title,
-    body: `${post.body.slice(10, 160)}...`,
-    date: formatDate(post.created_at),
-    readTime: getTimeRead(post.body),
-    number: post.number,
-  }));
+export function filterPosts(posts) {
+  return posts.map(post => ({
+      title: post.title,
+      body: `${post.body.slice(10, 160)}...`,
+      date: formatDate(post.created_at),
+      readTime: getTimeRead(post.body),
+      number: post.number,
+    }));
+}
 
-  localStorage.setItem(CACHE_KEY, JSON.stringify(mappedPosts));
+export function setCachedPosts(posts) {
+  localStorage.setItem(CACHE_KEY, JSON.stringify(posts));
   localStorage.setItem(CACHE_TIME_KEY, Date.now().toString());
 }

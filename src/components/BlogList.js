@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
 import { github } from '@/services/github';
-import { getCachedPosts, setCachedPosts } from '@/utils/cache';
+import { getCachedPosts, setCachedPosts, filterPosts } from '@/utils/cache';
 import LocalMarkdownRenderer from '@/components/LocalMarkdownRenderer';
 import Loading from "@/components/Loading";
 
@@ -21,18 +21,18 @@ export default function BlogPage() {
   }, [searchParams]);
 
   useEffect(() => {
-    const cachedPosts = getCachedPosts();
     if (!postNumber) {
+      const cachedPosts = getCachedPosts();
       if (cachedPosts) {
         setPosts(cachedPosts);
       } else {
         github.getPosts().then(fetched => {
-          setCachedPosts(fetched);
+          const filteredPosts = filterPosts(fetched)
+          setCachedPosts(filteredPosts);
+          setPosts(filteredPosts);
         });
-
-        setPosts(getCachedPosts());
       }
-      setIsLoading(false)
+      setIsLoading(false);
     }
   }, [postNumber]);
 
@@ -56,7 +56,7 @@ export default function BlogPage() {
             {posts.map(post => (
               <Link
                 key={`${post.title}-${post.number}`}
-                href={`/blog?post=${post.number}`}
+                href={`/?post=${post.number}`}
                 className="block border gap-2 rounded-lg p-4 shadow hover:shadow-lg transition"
               >
                 <div className="flex justify-between align-center">
