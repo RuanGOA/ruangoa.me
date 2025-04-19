@@ -3,8 +3,8 @@ const exp = {
   async redirects() {
     return [
       {
-        source: '/',
-        destination: '/blog',
+        source: '/blog',
+        destination: '/',
         permanent: true,
       },
     ];
