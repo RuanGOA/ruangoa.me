@@ -29,7 +29,7 @@ export default function Theme() {
   return (
     <button
       onClick={toggleTheme}
-      className="w-10 h-10 rounded rounded-full border bg-black dark:bg-white cursor-pointer border-main border-2"
+      className="w-10 h-10 rounded rounded-full border cursor-pointer border-main border-2"
       aria-label="Toggle dark mode"
     >
       {theme === 'dark' ? '☀️ ' : '🌙' }
