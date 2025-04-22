@@ -11,8 +11,7 @@ export default function Footer() {
           className="font-bold underline transition cursor-pointer"
         >
           Ruan Gomes
-        </Link>{' '}
-        | {new Date().getFullYear()}
+        </Link>
       </p>
     </footer>
   );
