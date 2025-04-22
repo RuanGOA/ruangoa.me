@@ -19,3 +19,20 @@ export const formatDate = (d) => {
   }
   return (d = dd + "/" + mm + "/" + yyyy);
 }
+
+function getFirstParagraphAfterTitle(markdown) {
+  // Split into lines
+  const lines = markdown.split(/\r?\n/);
+
+  // Find the index of the first heading (line starting with #)
+  const titleIndex = lines.findIndex(line => line.trim().startsWith('#'));
+
+  // Start looking for the first non-empty line after the title
+  for (let i = titleIndex + 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.length > 0) {
+      return line;
+    }
+  }
+  return '';
+}

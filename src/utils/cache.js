@@ -1,4 +1,4 @@
-import { formatDate, getTimeRead } from '@/utils/blog';
+import { formatDate, getTimeRead, getFirstParagraphAfterTitle } from '@/utils/blog';
 
 const CACHE_KEY = 'github_posts_cache';
 const CACHE_TIME_KEY = 'github_posts_cache_time';
@@ -15,7 +15,7 @@ export function getCachedPosts() {
 export function filterPosts(posts) {
   return posts.map(post => ({
       title: post.title,
-      body: `${post.body.slice(10, 160)}...`,
+      body: getFirstParagraphAfterTitle(post.body),
       date: formatDate(post.created_at),
       readTime: getTimeRead(post.body),
       number: post.number,
