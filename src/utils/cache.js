@@ -2,13 +2,13 @@ import { formatDate, getTimeRead } from '@/utils/blog';
 
 const CACHE_KEY = 'github_posts_cache';
 const CACHE_TIME_KEY = 'github_posts_cache_time';
-const FIVE_DAYS_MS = 5 * 24 * 60 * 60 * 1000;
+const EXPIRATION_TIME_MS = 30 * 1000;
 
 export function getCachedPosts() {
   const data = localStorage.getItem(CACHE_KEY);
   const time = localStorage.getItem(CACHE_TIME_KEY);
   if (!data || !time) return null;
-  if (Date.now() - Number(time) > FIVE_DAYS_MS) return null;
+  if (Date.now() - Number(time) > EXPIRATION_TIME_MS) return null;
   return JSON.parse(data);
 }
 
