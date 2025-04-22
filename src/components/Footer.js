@@ -12,7 +12,7 @@ export default function Footer() {
         >
           Ruan Gomes
         </Link>{' '}
-        | Code your life | {new Date().getFullYear()}
+        | {new Date().getFullYear()}
       </p>
     </footer>
   );
