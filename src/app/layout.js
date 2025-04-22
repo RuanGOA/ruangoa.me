@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <body
-        className={`bg-white min-h-screen overflow-scroll flex flex-col ${montserrat.className} dark:bg-black `} 
+        className={`bg-white min-h-screen overflow-y-scroll flex flex-col ${montserrat.className} dark:bg-black `} 
         suppressHydrationWarning
       >
         <Header />
