@@ -30,7 +30,7 @@ export default function Menu() {
             href={page.compare}
             className={`text-lg transition-colors ${
               isActive
-                ? 'text-main border-b-2 font-semibold'
+                ? 'text-main border-b-2'
                 : 'text-black dark:text-white'
             }`}
           >
