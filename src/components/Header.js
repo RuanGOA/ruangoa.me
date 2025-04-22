@@ -19,7 +19,7 @@ export default function Header() {
         </Link>
         <div className="flex flex-col justify-center">
           <p className="text-lg font-bold">Ruan Gomes</p>
-          <p className="text-md">Crafter</p>
+          <p className="text-md">Code your life!</p>
         </div>
       </div>
       <div className="flex gap-6 justify-between lg:justify-center items-center w-full lg:w-fit">
