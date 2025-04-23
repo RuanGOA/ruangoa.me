@@ -5,7 +5,7 @@ import Loading from "@/components/Loading";
 
 export async function generateMetadata({ params }) {
   return {
-    title: `Ruangoa`,
+    title: `RuanGOA - Posts`,
   }
 }
 

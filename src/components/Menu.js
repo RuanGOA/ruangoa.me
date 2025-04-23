@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 export default function Menu() {
   const pages = [
     {
-      name: "Blog",
+      name: "Posts",
       compare: "/",
     },
     {

@@ -3,7 +3,7 @@ const exp = {
   async redirects() {
     return [
       {
-        source: '/blog',
+        source: '/posts',
         destination: '/',
         permanent: true,
       },

@@ -5,7 +5,7 @@ import path from 'path';
 
 export async function generateMetadata({ params }) {
   return {
-    title: `Ruangoa - Contact`,
+    title: `RuanGOA - Contact`,
   }
 }
 
