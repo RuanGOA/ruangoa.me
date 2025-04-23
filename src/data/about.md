@@ -4,7 +4,7 @@ Hey there! 👋
 
 Come hang out for a minute, and I'll tell you a little about me.
 
-I was born in the late 90s in a smaller city in Pernambuco, Brazil. When I first got a computer, I spent a lot of time online – playing games, reading random stuff, the usual. Soon enough, everyone started calling me "the computer guy" – you know, the one who helps install programs and fix printers when they act up.
+I was born in the late 90s in a smaller city in Pernambuco, Brazil. When I first got a computer, I spent a lot of time online, playing games, reading random stuff, the usual. Soon enough, everyone started calling me "the computer guy", you know, the one who helps install programs and fix printers when they act up.
 
 When it was time for high school, my parents suggested a special school that mixed regular high school with learning about computers (Informatics). That was my first real taste of coding and tech, and guess what? I loved it! After finishing, I knew I wanted to learn even more, so going to a Federal University for Computer Science seemed like the right thing to do.
 
