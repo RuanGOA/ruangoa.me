@@ -1,4 +1,4 @@
-import LocalMarkdownRenderer from '@/components/LocalMarkdownRenderer';
+import MarkdownRenderer from '@/components/MarkdownRenderer';
 
 import fs from 'fs/promises';
 import path from 'path';
@@ -16,9 +16,9 @@ export default async function About() {
   return (
     <div className="w-full flex items-center justify-center">
       <div className="w-full flex items-center justify-center">
-        <LocalMarkdownRenderer>
+        <MarkdownRenderer>
           {markdown}
-        </LocalMarkdownRenderer>
+        </MarkdownRenderer>
       </div>
     </div>
   );

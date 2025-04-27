@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 
-import BlogList from "@/components/BlogList";
+import Blog from "@/components/Blog";
 import Loading from "@/components/Loading";
 
 export async function generateMetadata({ params }) {
@@ -9,11 +9,11 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default function Blog() {
+export default function BlogPage() {
   return (
     <div className="w-full flex align-center justify-center">
       <Suspense fallback={<Loading />}>
-        <BlogList />
+        <Blog />
       </Suspense>
     </div>
   );
