@@ -8,7 +8,7 @@ function LinkRenderer({ children, href }) {
   );
 }
 
-export default function LocalMarkdownRenderer({ children }) {
+export default function MarkdownRenderer({ children }) {
   return (
     <div className="max-w-none w-full lg:w-2/3 p-4 lg:p-0 prose dark:prose-invert justify-center">
       <ReactMarkdown components={{ a: LinkRenderer }}>
