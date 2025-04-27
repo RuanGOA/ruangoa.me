@@ -16,6 +16,7 @@ export function getCachedPosts() {
 export function filterPosts(posts) {
   return posts.map(post => ({
       id: encodeString(post.number),
+      tags: post.labels.map((tag) => tag.name),
       title: post.title,
       body: getFirstParagraphAfterTitle(post.body),
       date: formatDate(post.created_at),

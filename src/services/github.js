@@ -13,6 +13,8 @@ export const github = {
 	async getPosts() {
 		const response = await APIGithub.get("/repos/ruangoa/ruangoa.me/issues");
 
+		console.log(response.data)
+
 		return response.data;
 	},
 	async getPost(index) {
