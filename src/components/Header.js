@@ -7,12 +7,12 @@ import Icon from '@/assets/icon.svg';
 
 export default function Header() {
   return (
-    <header className="w-full py-8 px-4 flex lg:justify-between items-center border-b-1 border-secundary mb-8">
-      <div className="gap-4 items-center hidden lg:flex">
+    <header className="w-full py-6 px-4 flex flex-col lg:flex-row lg:justify-between items-center border-b-1 border-secundary mb-8">
+      <div className="gap-4 items-center flex pb-4 lg:pb-0 w-full lg:w-fit">
         <Link href="/">
           <Image
             priority
-            className="w-4 lg:w-12 cursor-pointer"
+            className="w-10 lg:w-12 cursor-pointer"
             src={Icon}
             alt="Website's icon"
           />
