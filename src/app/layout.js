@@ -14,8 +14,22 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: '@ruangoa',
+  title: 'RuanGOA',
   description: 'Code your life!',
+  icons: [
+    { rel: "icon", url: "/favicon.ico" },
+  ],
+  authors: [
+    { name: "Ruan Gomes", url: "https://ruangoa.vercel.app" },
+  ],
+  openGraph: {
+    title: "RuanGOA",
+    description: "Code your life!",
+    url: "https://ruangoa.vercel.app",
+    siteName: "RuanGOA",
+    locale: "en_US",
+    type: "website"
+  },
 };
 
 export default function RootLayout({ children }) {
