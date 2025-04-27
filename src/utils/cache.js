@@ -1,3 +1,4 @@
+import { encodeString } from '@/utils/utils';
 import { formatDate, getTimeRead, getFirstParagraphAfterTitle } from '@/utils/blog';
 
 const CACHE_KEY = 'github_posts_cache';
@@ -14,6 +15,7 @@ export function getCachedPosts() {
 
 export function filterPosts(posts) {
   return posts.map(post => ({
+      id: encodeString(post.number),
       title: post.title,
       body: getFirstParagraphAfterTitle(post.body),
       date: formatDate(post.created_at),
