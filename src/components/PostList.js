@@ -21,7 +21,7 @@ export default function Posts({ posts }) {
             <p className="text-gray-600 line-clamp-2">{post.body}</p>
             <div className="flex flex-wrap gap-2 w-fit">
               {post.tags.map((tag) => (
-                <label key={`${tag}`} className="px-2 py-1 bg-main text-black border rounded-lg">{tag}</label>
+                <label key={`${tag}`} className="px-2 py-1 bg-main text-black border border-0 rounded-lg">{tag}</label>
               ))}
             </div>
           </Link>
